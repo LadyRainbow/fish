@@ -1,0 +1,42 @@
+.not-found {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    height: calc(var(--vhMenu, 1vh) * 100);
+    h3 {
+        font-size: 24px;
+        line-height: 1.2;
+        margin-bottom: 24px;
+    }
+    a {
+        color: #FFD90F;
+        text-decoration: underline;
+        transition: .2s;
+        &:hover {
+            color: #FFD90F;
+            text-decoration: none;
+        }
+    }
+}
+.cifra {
+    font-size: 180px;
+    line-height: 1;
+    color: #FFD90F;
+    text-shadow: 0px 0px 10px #FFD90F;
+    font-family: 'bebas-neue', cursive;
+}
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+    .not-found  {
+        h3 {
+            font-size: 28px;
+        }
+    }
+    .cifra {
+        font-size: 150px;
+    }
+}
