@@ -9,16 +9,8 @@ main {
     background: url('../img/main.png') center no-repeat;
     background-size: cover;
     h1 {
-        font-family: 'Gilroy', sans-serif;
-        font-weight: 500;
-        font-size: 48px;
-        line-height: 1.125;
         width: 60%;
-        color: #3F5883;
         margin-bottom: 44px;
-        span {
-            color: #91A9CD;
-        }
     }
 }
 .main-btn {
@@ -343,9 +335,6 @@ h2 {
     }
     .section-main-content {
         padding: 60px 36px;
-        h1 {
-            font-size: 36px;
-        }
     }
     h2 {
         font-size: 30px;
@@ -410,11 +399,6 @@ h2 {
     }
 }
 @media (max-width: 410px) {
-    .section-main-content {
-        h1 {
-            font-size: 32px;
-        }
-    }
     h2 {
         font-size: 28px;
     }
