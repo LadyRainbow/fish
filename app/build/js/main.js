@@ -194,7 +194,12 @@ $(document).ready(function () {
     });
 
     // masked
-    $('.mask-phone').mask('+7(99999?9999999999', {placeholder: ""});
+    $('.mask-phone').mask('+7(999)999-99-99');
+
+    // reset
+    $('.clear-filters-btn').click(function () {
+        $('input:checked').prop('checked', false);
+    });
 
 
     // pop-ups
@@ -204,27 +209,33 @@ $(document).ready(function () {
         $popUpGeneralBlock.removeClass('active');
         $('#thnx').addClass('active');
     };
-
-    $('.open-pop-up-menu').click(function (e) {
+    // 1 pop-up
+    $('.open-pop-beClient').click(function (e) {
         $overlayPopUpWRP.addClass('active');
         $('body, html').addClass('active');
         $popUpGeneralBlock.removeClass('active');
-        $('#buyTicket').addClass('active');
-        $('.burger').removeClass('active');
-        $('.menu').removeClass('active');
-        $('body').removeClass('active');
+        $('#beClient').addClass('active');
     });
-    $('.open-pop-buyTicket').click(function (e) {
+    // 2 pop-up
+    $('.open-pop-beConverters').click(function (e) {
         $overlayPopUpWRP.addClass('active');
         $('body, html').addClass('active');
         $popUpGeneralBlock.removeClass('active');
-        $('#buyTicket').addClass('active');
+        $('#beConverters').addClass('active');
     });
-    $('.open-accred-btn').click(function (e) {
+    // 3 pop-up for opt
+    $('.open-pop-beOpt').click(function (e) {
         $overlayPopUpWRP.addClass('active');
         $('body, html').addClass('active');
         $popUpGeneralBlock.removeClass('active');
-        $('#accredBlock').addClass('active');
+        $('#beOpt').addClass('active');
+    });
+    // 4 pop-up for eSupplier
+    $('.open-pop-beSupplier').click(function (e) {
+        $overlayPopUpWRP.addClass('active');
+        $('body, html').addClass('active');
+        $popUpGeneralBlock.removeClass('active');
+        $('#beSupplier').addClass('active');
     });
 
     $overlay.click(function () {

@@ -1,0 +1,119 @@
+.catalog2-page {
+    padding-top: 175px;
+    padding-bottom: 80px;
+    .meet-slide {
+        padding: 16px 16px 18px;
+    }
+    .meet-slide-img {
+        height: 207px;
+        margin-bottom: 16px;
+    }
+    .meet-title {
+        font-size: 14px;
+    }
+    .meet-tag {
+        bottom: 12px;
+        left: 12px;
+        font-size: 14px;
+    }
+}
+.input-search-wrp {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    border: 1px solid #C5D3EA;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 0 12px 0 24px;
+    margin-top: 32px;
+    margin-bottom: 56px;
+    input {
+        padding: 0;
+        height: 48px;
+        width: 100%;
+        flex: 1;
+        background: #F4F5F8;
+        font-size: 16px;
+        &::placeholder {
+            color: #7D8085;
+        }
+    }
+}
+.search-btn {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.clear-filters-btn {
+    display: inline-flex;
+    align-items: center;
+    color: #F60F00;
+    cursor: pointer;
+    p {
+        position: relative;
+        font-family: 'Gilroy', sans-serif;
+        font-size: 14px;
+        line-height: 1.2;
+        margin-left: 9px;
+        font-weight: 500;
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 1px;
+            background-color: #F60F00;
+            transition: .2s;
+        }
+    }
+    &:hover {
+        p::before {
+            width: 100%;
+        }
+    }
+}
+.icon-close {
+    display: block;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 4px;
+        content: '';
+        display: block;
+        width: 2px;
+        height: 10px;
+        background-color: #F60F00;
+        transition: .2s;
+    }
+    &::after {
+        position: absolute;
+        top: 4px;
+        left: 0;
+        content: '';
+        display: block;
+        width: 10px;
+        height: 2px;
+        background-color: #F60F00;
+        transition: .2s;
+    }
+}
+// @media
+@media (max-width: 1050px) {
+    .catalog2-page {
+        padding-top: 97px;
+    }
+}
+
+@media (max-width: 991px) {
+    .catalog2-page {
+        padding-top: 80px;
+    }
+}
+@media (max-width: 767px) {
+
+}

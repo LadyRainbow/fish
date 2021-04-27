@@ -25,7 +25,7 @@ h1 {
     position: absolute;
     left: 0;
     bottom: -15px;
-    color: #E4582C;
+    color: red;
     opacity: 0;
     font-size: 12px;
     line-height: 1.2;
@@ -62,69 +62,52 @@ h1 {
     opacity: .5;
     pointer-events: none;
 }
-
 .checkbox {
     input {
     	position: absolute;
     	z-index: -1;
     	opacity: 0;
         &:checked {
-            & + .checkbox-text:after {
-            	opacity: 1;
-            }
-        }
-    }
-}
-.checkbox {
-    input {
-    	position: absolute;
-    	z-index: -1;
-    	opacity: 0;
-        &:checked {
-            & + .checkbox-text-long:after {
-            	opacity: 1;
+            & + .checkbox-text::after {
+                opacity: 1;
             }
         }
     }
 }
 
 .checkbox-text {
-	position: relative;
-	padding: 0 0 0 56px;
-    cursor: pointer;
-    p {
-        color: #DFDFDF;
-        letter-spacing: 0.02em;
-        a {
-            text-decoration: underline;
-            &:hover {
-                text-decoration: none;
-            }
-        }
-
-    }
+    position: relative;
+	padding: 0 0 0 44px;
+	cursor: pointer;
+    font-size: 16px;
     &::before {
     	content: '';
     	position: absolute;
-    	top: 50%;
-        margin-top: -18px;
+    	top: -4px;
     	left: 0;
-    	width: 36px;
-    	height: 36px;
-        background: #2F2F2F;
-        border: 6px solid #FFFFFF;
+    	width: 32px;
+    	height: 32px;
+        background: #F4F5F8;
+        border: 1px solid #C5D3EA;
+        border-radius: 8px;
     }
     &::after {
-    	content: '';
-    	position: absolute;
-    	top: 50%;
-        margin-top: -8px;
-    	left: 8px;
-    	width: 19px;
-    	height: 16px;
-    	opacity: 0;
+        content: '';
+        position: absolute;
+        top: 4px;
+        left: 8px;
+        width: 16px;
+        height: 14px;
         background: url('../img/check.svg') center no-repeat;
-        background-position: contain;
+        background-size: contain;
+        opacity: 0;
+    }
+    a {
+        color: #F60F00;
+        transition: .2s;
+        &:hover {
+            color: darken(#F60F00, 5%);
+        }
     }
 }
 .radio {
@@ -133,34 +116,44 @@ h1 {
     	z-index: -1;
     	opacity: 0;
         &:checked {
-            & + .radio-text::before {
-                background: #EC7B1B;
+            & + .radio-text::after {
+                opacity: 1;
             }
         }
     }
 }
 .radio-text {
     position: relative;
-	padding: 0 0 0 56px;
+	padding: 0 0 0 44px;
 	cursor: pointer;
-    line-height: 1.2;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    font-size: 32px;
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 0.02em;
+    font-size: 16px;
     &::before {
     	content: '';
     	position: absolute;
-    	top: 3px;
+    	top: 50%;
     	left: 0;
-    	width: 40px;
-    	height: 40px;
-        background: #2F2F2F;
-        border: 6px solid #FFFFFF;
-        border-radius: 50%;
+        margin-top: -16px;
+    	width: 32px;
+    	height: 32px;
+        background: #F4F5F8;
+        border: 1px solid #C5D3EA;
+        border-radius: 8px;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        left: 8px;
+        top: 50%;
+        margin-top: -7px;
+        width: 16px;
+        height: 14px;
+        background: url('../img/check.svg') center no-repeat;
+        background-size: contain;
+        opacity: 0;
     }
 }
 

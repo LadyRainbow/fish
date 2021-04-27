@@ -180,22 +180,173 @@
 
         </div>
         <div class="pages-wrapper">
-            <section class="not-found pt64">
+            <div class="catalog2-page">
     <div class="container">
-        <div class="row">
-            <div class="offset-xl-3 offset-lg-2 offset-md-1 offset-0 col-xl-6 col-lg-8 col-md-10 col-12">
-                <p class="cifra">404</p>
+        <h1>Собственное производство</h1>
+        <div class="input-search-wrp">
+            <input type="text" placeholder="Начните вводить название">
+            <div class="search-btn">
+                <img src="../../build/img/search.svg" alt="">
             </div>
         </div>
-        <div class="row">
-            <div class=" offset-lg-2 offset-md-1 offset-0 col-lg-8 col-md-10 col-12">
-                <h3>Запрашиваемая вами страница не&nbsp;найдена или перенесена.</h3>
-                <p>Попробуйте воспользоваться меню
-                или <a href="/">перейти на главную</a></p>
+        <div class="catalog-content">
+            <div class="row">
+                <div class="d-none d-md-block col-xl-3 col-lg-4 col-md-6 filter-wrp">
+                    <div class="top-title-wrp">
+                        <div class="clear-filters-btn">
+                            <span class="icon-close"></span>
+                            <p>Сбросить</p>
+                        </div>
+                    </div>
+                    <div id="accordionCatalog">
+                      <div class="card">
+                        <div class="card-header" id="headingOne">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Детские площадки
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionCatalog">
+                          <ul class="card-body">
+                              <li>
+                                  <label class="checkbox">
+                                    <input type="checkbox">
+                                    <div class="checkbox-text">Прямоугольник</div>
+                                  </label>
+                              </li>
+                              <li>
+                                  <label class="checkbox">
+                                    <input type="checkbox">
+                                    <div class="checkbox-text">Овал</div>
+                                  </label>
+                              </li>
+                              <li>
+                                  <label class="checkbox">
+                                    <input type="checkbox">
+                                    <div class="checkbox-text">Другое</div>
+                                  </label>
+                              </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingTwo">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Спортплощадки
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionCatalog">
+                            <ul class="card-body">
+                                <li>
+                                    <label class="checkbox">
+                                      <input type="checkbox">
+                                      <div class="checkbox-text">Прямоугольник</div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="checkbox">
+                                      <input type="checkbox">
+                                      <div class="checkbox-text">Овал</div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="checkbox">
+                                      <input type="checkbox">
+                                      <div class="checkbox-text">Другое</div>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingThree">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Парковая мебель</button>
+                          </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionCatalog">
+                            <ul class="card-body">
+                                <li>
+                                    <label class="checkbox">
+                                      <input type="checkbox">
+                                      <div class="checkbox-text">Прямоугольник</div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="checkbox">
+                                      <input type="checkbox">
+                                      <div class="checkbox-text">Овал</div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="checkbox">
+                                      <input type="checkbox">
+                                      <div class="checkbox-text">Другое</div>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-8 col-md-6 col-12">
+                    <div class="flex-catalog-top-wrp">
+                        <div class="flex-cat-top">
+                            <p>Выбрано товаров: </p>
+                            <p class="flex-catalog-value">68</p>
+                        </div>
+                        <div class="flex-cat-top">
+                            <p>Сортировка:</p>
+                            <div class="flex header-select">
+                                <div class="custom-select-wrapper">
+                                    <label for="tovar"></label>
+                                    <select id="tovar">
+                                        <option value="По умолчанию" selected>По умолчанию</option>
+                                        <option value="по цене">по цене</option>
+                                        <option value="по популярности">по популярности</option>
+                                        <option value="по новизне">по новизне</option>
+                                    </select>
+                                    <div class="custom-select-head"><span>По умолчанию</span></div>
+                                    <div class="custom-select-list-wrapper">
+                                        <ul class="custom-select-list">
+                                            <li data-value="По умолчанию" class="selected">По умолчанию</li>
+                                            <li data-value="по цене">по цене</li>
+                                            <li data-value="по популярности">по популярности</li>
+                                            <li data-value="по новизне">по новизне</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <a href="#" class="meet-slide meet-slide-other">
+                                <span class="meet-slide-img">
+                                    <img src="../../build/img/meet1.png" alt="">
+                                    <span class="meet-tag">Сельдь</span>
+                                </span>
+                                <p class="meet-title">Сельдь 300+ атлантическая, 1/30 октябрь 2020 весовая</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <a href="#" class="meet-slide meet-slide-other">
+                                <span class="meet-slide-img">
+                                    <img src="../../build/img/meet2.png" alt="">
+                                    <span class="meet-tag">Минтай</span>
+                                </span>
+                                <p class="meet-title">Минтай с/м, б/г 1/24 25+</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</section>
+</div>
 
         </div>
         <div class="footer-wrapper">
