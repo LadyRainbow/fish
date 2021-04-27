@@ -68,6 +68,8 @@ h2 {
     border-radius: 16px;
 }
 .choose-text {
+    max-height: 123px;
+    overflow: hidden;
     margin-bottom: 20px;
 }
 .choose-title {
@@ -76,7 +78,7 @@ h2 {
     font-size: 19px;
     line-height: 1.2;
     color: #4B4B4B;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
 }
 // 3 block
 .section-slider {

@@ -43,40 +43,6 @@ $(document).ready(function () {
         $(this).addClass('active');
     });
 
-
-    // soft scroll
-    if($('main').length){
-        $(".scrollTo").on("click", function (event) {
-            // исключаем стандартную реакцию браузера
-            event.preventDefault();
-            $('.burger').removeClass('active');
-            $('.menu').removeClass('active');
-            $('body').removeClass('active');
-            var id  = $(this).attr('href');
-            if(windowWidth < 768) {
-                var top = $(id).offset().top - 20;
-            } else {
-                var top = $(id).offset().top;
-            }
-            $('body,html').animate({scrollTop: top}, 500);
-            // анимируем переход к блоку, время: 500 мс
-
-            // находим высоту, на которой расположен блок
-        });
-    } else {
-        $(".scrollToMenu").each(function() {
-            var href = $(this).attr('href');
-            href = '/' + href;
-            $(this).attr('href', href);
-        });
-    };
-
-
-    $('.row-masonry').masonry({
-        itemSelector: '.block-masonry-wrp',
-    });
-
-
     // scroll header
     $(window).scroll(function() {
         headerChange();
@@ -93,11 +59,48 @@ $(document).ready(function () {
         }
     };
 
-    // accordion collaps cars
-    $('.accordion-wrp .card').click(function () {
-        var dataCar = $(this).attr('data-car');
-        $('.programm-points-img img').removeClass('active');
-        $('.programm-points-img img[data-car="' + dataCar + '"]').addClass('active');
+    // soft scroll
+    // if($('main').length){
+    //     $(".scrollTo").on("click", function (event) {
+    //         // исключаем стандартную реакцию браузера
+    //         event.preventDefault();
+    //         $('.burger').removeClass('active');
+    //         $('.menu').removeClass('active');
+    //         $('body').removeClass('active');
+    //         var id  = $(this).attr('href');
+    //         if(windowWidth < 768) {
+    //             var top = $(id).offset().top - 20;
+    //         } else {
+    //             var top = $(id).offset().top;
+    //         }
+    //         $('body,html').animate({scrollTop: top}, 500);
+    //         // анимируем переход к блоку, время: 500 мс
+    //
+    //         // находим высоту, на которой расположен блок
+    //     });
+    // } else {
+    //     $(".scrollToMenu").each(function() {
+    //         var href = $(this).attr('href');
+    //         href = '/' + href;
+    //         $(this).attr('href', href);
+    //     });
+    // };
+
+    //
+    // $('.row-masonry').masonry({
+    //     itemSelector: '.block-masonry-wrp',
+    // });
+
+
+
+
+    // switch advise in restourants page
+    $('.partner-tab li').click(function () {
+        var dataAdvise = $(this).attr('data-advise');
+        $('.partner-tab li').removeClass('active');
+        $(this).addClass('active');
+        $('.advise-body').removeClass('active');
+        $('#' + dataAdvise + '.advise-body').addClass('active');
     });
 
     // chnge text's height
@@ -133,6 +136,29 @@ $(document).ready(function () {
             },
             {
                 breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
+    });
+    $('.meet-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: $('.prev-meet-arrow'),
+        nextArrow: $('.next-meet-arrow'),
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
