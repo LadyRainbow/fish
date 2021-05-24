@@ -1,6 +1,6 @@
 .catalog2-page {
     padding-top: 175px;
-    padding-bottom: 80px;
+    padding-bottom: 112px;
     .meet-slide {
         padding: 16px 16px 18px;
     }
@@ -43,6 +43,18 @@
     width: 24px;
     height: 24px;
     cursor: pointer;
+}
+.top-title-wrp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h3 {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 1.2;
+        color: #4B4B4B;
+        margin-right: 10px;
+    }
 }
 .clear-filters-btn {
     display: inline-flex;
@@ -102,6 +114,183 @@
         transition: .2s;
     }
 }
+.accordion-catalog {
+    .card {
+        margin-top: 24px;
+        background-color: rgba(255, 255, 255, 0);
+        .btn-link {
+            position: relative;
+            width: 100%;
+            text-align: left;
+            white-space: normal;
+            padding-right: 40px;
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 1.2;
+            color: #4B4B4B;
+            &::after {
+                content: '';
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                top: 50%;
+                right: 0px;
+                background: url('../img/down.svg') center no-repeat;
+                background-size: contain;
+                margin-top: -10px;
+            }
+            &[aria-expanded="true"] {
+                &::after  {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+    .card-body {
+        padding-bottom: 4px;
+        li {
+            margin-top: 30px;
+        }
+    }
+}
+.flex-catalog-top-wrp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 1.2;
+    padding-top: 7px;
+}
+.flex-cat-top {
+    display: flex;
+    align-items: center;
+}
+.flex-catalog-value {
+    color: #4B4B4B;
+}
+.catalog-row-fish {
+    .col-12 {
+        margin-bottom: 30px;
+    }
+}
+.paginationjs-pages {
+    margin-top: 34px;
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    li {
+        position: relative;
+        margin: 6px;
+        a {
+            transition: .2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 64px;
+            height: 64px;
+            background: #F4F5F8;
+            box-shadow: -3px 3px 6px rgba(229, 230, 233, 0.2), 3px -3px 6px rgba(229, 230, 233, 0.2), -3px -3px 6px rgba(255, 255, 255, 0.9), 3px 3px 8px rgba(229, 230, 233, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(229, 230, 233, 0.5);
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.2;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: #4B4B4B;
+            font-family: 'Gilroy', sans-serif;
+        }
+        &:hover {
+            a {
+                color: #ffffff;
+                background: #F60F00;
+                box-shadow: none;
+            }
+        }
+        &.active {
+            a {
+                color: #ffffff;
+                background: #F60F00;
+                box-shadow: none;
+            }
+        }
+        &.disabled, &.active {
+            pointer-events: none;
+        }
+        &.paginationjs-prev, &.paginationjs-next {
+            a {
+                font-size: 0;
+            }
+            &::before {
+                position: absolute;
+                content: url('../img/arrow-right-short.svg');
+                width: 24px;
+                height: 24px;
+                top: 50%;
+                left: 50%;
+                margin-top: -12px;
+                margin-left: -12px;
+                filter: brightness(0) saturate(100%) invert(22%) sepia(74%) saturate(0%) hue-rotate(180deg) brightness(88%) contrast(76%);
+                transform: rotate(-180deg);
+            }
+            &.disabled {
+                &::before {
+                    filter: brightness(0) saturate(100%) invert(7%) sepia(12%) saturate(321%) hue-rotate(21deg) brightness(96%) contrast(89%);
+                    opacity: .2;
+                }
+            }
+            &:hover {
+                &::before {
+                    filter: brightness(0) saturate(100%) invert(81%) sepia(94%) saturate(0%) hue-rotate(215deg) brightness(105%) contrast(107%);
+                }
+            }
+        }
+        &.paginationjs-next {
+            &::before {
+                transform: rotate(0deg);
+            }
+        }
+    }
+}
+.pop-up-filter-mob {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(var(--vhMenu, 1vh) * 100);
+    overflow-y: auto;
+    z-index: 5;
+    background-color: #F4F5F8;
+    padding: 60px 20px 40px;
+    &.active {
+        display: block;
+    }
+}
+.filterPopUp-btn {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: #F70F00;
+    border-radius: 14px;
+    width: 100%;
+    height: 58px;
+    padding: 0 44px;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Gilroy', sans-serif;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 24px;
+}
 // @media
 @media (max-width: 1050px) {
     .catalog2-page {
@@ -113,7 +302,52 @@
     .catalog2-page {
         padding-top: 80px;
     }
+    .flex-catalog-top-wrp {
+        display: block;
+        padding-top: 0;
+        .flex-cat-top {
+            & + .flex-cat-top {
+                margin-top: 8px;
+            }
+        }
+    }
 }
 @media (max-width: 767px) {
-
+    .catalog2-page {
+        padding-bottom: 80px;
+    }
+    .filterPopUp-btn {
+        display: flex;
+    }
+    .input-search-wrp {
+        width: 100%;
+        margin-top: 24px;
+        margin-bottom: 16px;
+    }
+    .paginationjs-pages li a {
+        width: 48px;
+        height: 48px;
+    }
+    .top-title-wrp h3 {
+        font-size: 24px;
+    }
+    .accordion-catalog {
+        .card {
+            margin-top: 16px;
+            .btn-link {
+                font-size: 18px;
+            }
+            .checkbox-text{
+                &::before {
+                    top: -4px;
+                }
+                &::after {
+                    top: 4px;
+                }
+            }
+        }
+        .card-body li {
+            margin-top: 24px;
+        }
+    }
 }

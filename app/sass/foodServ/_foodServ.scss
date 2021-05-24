@@ -45,15 +45,12 @@
             padding: 5px 10px 0;
             font-family: 'Gilroy', sans-serif;
             font-weight: 500;
-            color: #4B4B4B;
-            transition: .2s;
-            &:hover {
-                color: #95A6C2;
-            }
+            color: #95A6C2;
         }
-        &.active {
+        &:last-child {
             a {
-                color: #95A6C2;
+                color: #4B4B4B;
+                pointer-events: none;
             }
         }
         & + li {
@@ -388,8 +385,10 @@
         margin-top: 50px;
     }
     .foodServ-main-bg {
-        top: 25px;
-        right: 25px;
+        top: inherit;
+        bottom: 20px;
+        right: 20px;
+        width: 50%;
     }
     .min-order-block-img {
         width: 100%;

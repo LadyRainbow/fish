@@ -201,6 +201,229 @@ $(document).ready(function () {
         $('input:checked').prop('checked', false);
     });
 
+    // pagination
+    if($('.catalog2-page').length) {
+        $('#pagination-container').pagination({
+            dataSource: [1, 2, 3, 4],
+            pageSize: 1,
+            showPrevious: true,
+            showNext: true,
+        });
+    };
+
+    // filter PopUp Catalog
+    $('.filterPopUp-btn').click(function () {
+        $('.pop-up-filter-mob').addClass('active');
+    });
+    $('.pop-up-filterPopUp-close-btn').click(function () {
+        $('.pop-up-filter-mob').removeClass('active');
+    });
+
+    // cart1
+    $('.cartBlock.cartBlock-absent').find('.cart-price-item span').text(0);
+
+    function CounterFunc () {
+        $(".quantity-cart-input").each(function () {
+            var $thisCart = $(this).closest('.cartBlock');
+            var price = $thisCart.find('.cart-price-item span').text();
+            var cartPriceTotal = +price * $(this).val();
+            $thisCart.find('.cart-price-total span').text(cartPriceTotal.toFixed(2));
+        });
+        $('.cartMainBlock').each(function () {
+            var summ = 0;
+            $(this).find('.cart-price-total span').each(function () {
+                summ += +$(this).text();
+            });
+            $(this).find('.total-summa span').text(summ.toFixed(2));
+        });
+
+        var summTotal = 0;
+        $('.total-summa span').each(function () {
+            summTotal += +$(this).text();
+            $('.final-summa-cifra span').text(summTotal.toFixed(2));
+        });
+
+    };
+
+    CounterFunc ();
+
+    $(".quantity-cart-input").on('input', function () {
+        if($(this).val() == '' || $(this).val() == 0 || $(this).val() < 0) {
+            $(this).val(0);
+            $minus.addClass('disabled');
+        } else {
+            $minus.removeClass('disabled');
+        };
+        var $thisCart = $(this).closest('.cartBlock');
+        var price = $thisCart.find('.cart-price-item span').text();
+        var cartPriceTotal = +price * $(this).val();
+        $thisCart.find('.cart-price-total span').text(cartPriceTotal.toFixed(2));
+        var summ = 0;
+        var summTotal = 0;
+        $(this).closest('.cartMainBlock').find('.cart-price-total span').each(function () {
+            summ += +$(this).text();
+            $(this).closest('.cartMainBlock').find('.total-summa span').text(summ.toFixed(2));
+        });
+        $('.total-summa span').each(function () {
+            summTotal += +$(this).text();
+            $('.final-summa-cifra span').text(summTotal.toFixed(2));
+        });
+    });
+
+    // INPUT CHANGE AMOUNT
+     var $minus = $('.cartMinus');
+     var $plus = $('.cartPlus');
+
+     var $deleteCartBlock = $('.delete-block');
+
+
+      $minus.click(function () {
+           var $amountInput = $(this).parent().children('.quantity-cart-input');
+           var count = parseInt($amountInput.val()) - 1;
+           // count = count < 1 ? 1 : count;
+           if(count < 0 || count == 0) {
+               count = 0;
+               $(this).addClass('disabled');
+           } else {
+               count = count;
+               $(this).removeClass('disabled');
+           };
+           $amountInput.val(count);
+           $amountInput.change();
+           var $thisCart = $(this).closest('.cartBlock');
+           var price = $thisCart.find('.cart-price-item span').text();
+           var cartPriceTotal = +price * $thisCart.find('.quantity-cart-input').val();
+           $thisCart.find('.cart-price-total span').text(cartPriceTotal.toFixed(2));
+           var summ = 0;
+           $(this).closest('.cartMainBlock').find('.cart-price-total span').each(function () {
+               summ += +$(this).text();
+               $(this).closest('.cartMainBlock').find('.total-summa span').text(summ.toFixed(2));
+           });
+           var summTotal = 0;
+           $('.total-summa span').each(function () {
+               summTotal += +$(this).text();
+               $('.final-summa-cifra span').text(summTotal.toFixed(2));
+           });
+           return false;
+       });
+       $plus.click(function () {
+           $(this).closest('.quantity-cart').find($minus).removeClass('disabled');
+           var $amountInput = $(this).parent().children('.quantity-cart-input');
+           $amountInput.val(parseInt($amountInput.val()) + 1);
+           $amountInput.change();
+           var $thisCart = $(this).closest('.cartBlock');
+           var price = $thisCart.find('.cart-price-item span').text();
+           var cartPriceTotal = +price * $thisCart.find('.quantity-cart-input').val();
+           $thisCart.find('.cart-price-total span').text(cartPriceTotal.toFixed(2));
+           var summ = 0;
+           $(this).closest('.cartMainBlock').find('.cart-price-total span').each(function () {
+               summ += +$(this).text();
+               $(this).closest('.cartMainBlock').find('.total-summa span').text(summ.toFixed(2));
+           });
+           var summTotal = 0;
+           $('.total-summa span').each(function () {
+               summTotal += +$(this).text();
+               $('.final-summa-cifra span').text(summTotal.toFixed(2));
+           });
+           return false;
+       });
+
+       // DELETE cartBlock
+       // $deleteCartBlock.click(function () {
+       //     var $cartBlock = $(this).closest('.cartBlock');
+       //     $cartBlock.find('.cart-price-total span').text(0);
+       //     var summ = 0;
+       //     $('.cart-price-total span').each(function () {
+       //         summ += +$(this).text();
+       //         $('.total-summa span').text(summ);
+       //     });
+       //     if ($('.lk-page').length) {
+       //         var discSumma = Number( $('.total-lk .total-summa span').text()) + Number($('.total-lk .disc-amount span').text());
+       //         $('.disc-summa span').text(discSumma);
+       //         if(discSumma < 0) {
+       //             $('.disc-summa span').text(0);
+       //         } else {
+       //             $('.disc-summa span').text(discSumma);
+       //         }
+       //     }
+       //      setTimeout(function() {
+       //           $cartBlock.slideUp();
+       //      }, 200);
+       //  });
+
+        if(windowWidth >= 1200)  {
+            if ($('.product-img-prev-wrp').length <= 7) {
+                $('.slider-prev-wrp').addClass('stop-slide');
+            } else {
+                $('.slider-prev-wrp').removeClass('stop-slide');
+            }
+        } else {
+            if(windowWidth < 768) {
+                if ($('.product-img-prev-wrp').length <= 4) {
+                    $('.slider-prev-wrp').addClass('stop-slide');
+                } else {
+                    $('.slider-prev-wrp').removeClass('stop-slide');
+                }
+            } else {
+                if ($('.product-img-prev-wrp').length <= 5) {
+                    $('.slider-prev-wrp').addClass('stop-slide');
+                } else {
+                    $('.slider-prev-wrp').removeClass('stop-slide');
+                }
+            }
+        };
+
+         // slick product card
+         $('.product-img-main').slick({
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false,
+              fade: true,
+              focusOnSelect: true,
+              asNavFor: '.product-img-prev',
+              responsive: [
+                  {
+                      breakpoint: 767,
+                      settings: {
+                          dots: false,
+                           asNavFor: '.product-img-prev',
+                          slidesToShow: 1,
+                          slidesToScroll: 1
+                      }
+                  }
+              ]
+         });
+         $('.product-img-prev').slick({
+              slidesToShow: 7,
+              arrows: false,
+              slidesToScroll: 1,
+              asNavFor: '.product-img-main',
+              dots: false,
+              // infinite: false,
+              focusOnSelect: true,
+              responsive: [
+                  {
+                      breakpoint: 1200,
+                      settings: {
+                          dots: false,
+                          slidesToShow: 5,
+                          slidesToScroll: 1,
+                           asNavFor: '.product-img-main',
+                      }
+                  },
+                  {
+                      breakpoint: 768,
+                      settings: {
+                          dots: false,
+                          asNavFor: '.product-img-main',
+                          vertical: false,
+                          slidesToShow: 4,
+                          slidesToScroll: 1,
+                           asNavFor: '.product-img-main',
+                      }
+                  },
+              ]
+        });
 
     // pop-ups
     function thnx () {
@@ -230,7 +453,7 @@ $(document).ready(function () {
         $popUpGeneralBlock.removeClass('active');
         $('#beOpt').addClass('active');
     });
-    // 4 pop-up for eSupplier
+    // 4 pop-up for beSupplier
     $('.open-pop-beSupplier').click(function (e) {
         $overlayPopUpWRP.addClass('active');
         $('body, html').addClass('active');

@@ -193,17 +193,18 @@
             <div class="row">
                 <div class="d-none d-md-block col-xl-3 col-lg-4 col-md-6 filter-wrp">
                     <div class="top-title-wrp">
+                        <h3>Фильтры</h3>
                         <div class="clear-filters-btn">
                             <span class="icon-close"></span>
                             <p>Сбросить</p>
                         </div>
                     </div>
-                    <div id="accordionCatalog">
+                    <div id="accordionCatalog" class="accordion-catalog">
                       <div class="card">
                         <div class="card-header" id="headingOne">
                           <h5 class="mb-0">
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              Детские площадки
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                              Вид
                             </button>
                           </h5>
                         </div>
@@ -212,19 +213,55 @@
                               <li>
                                   <label class="checkbox">
                                     <input type="checkbox">
-                                    <div class="checkbox-text">Прямоугольник</div>
+                                    <div class="checkbox-text">Сельдь</div>
                                   </label>
                               </li>
                               <li>
                                   <label class="checkbox">
                                     <input type="checkbox">
-                                    <div class="checkbox-text">Овал</div>
+                                    <div class="checkbox-text">Форель</div>
                                   </label>
                               </li>
                               <li>
                                   <label class="checkbox">
                                     <input type="checkbox">
-                                    <div class="checkbox-text">Другое</div>
+                                    <div class="checkbox-text">Кижуч</div>
+                                  </label>
+                              </li>
+                              <li>
+                                  <label class="checkbox">
+                                    <input type="checkbox">
+                                    <div class="checkbox-text">Масляная</div>
+                                  </label>
+                              </li>
+                              <li>
+                                  <label class="checkbox">
+                                    <input type="checkbox">
+                                    <div class="checkbox-text">Марлин</div>
+                                  </label>
+                              </li>
+                              <li>
+                                  <label class="checkbox">
+                                    <input type="checkbox">
+                                    <div class="checkbox-text">Лосось (семга)</div>
+                                  </label>
+                              </li>
+                              <li>
+                                  <label class="checkbox">
+                                    <input type="checkbox">
+                                    <div class="checkbox-text">Камбала</div>
+                                  </label>
+                              </li>
+                              <li>
+                                  <label class="checkbox">
+                                    <input type="checkbox">
+                                    <div class="checkbox-text">Минтай</div>
+                                  </label>
+                              </li>
+                              <li>
+                                  <label class="checkbox">
+                                    <input type="checkbox">
+                                    <div class="checkbox-text">Кальмар</div>
                                   </label>
                               </li>
                           </ul>
@@ -234,7 +271,7 @@
                         <div class="card-header" id="headingTwo">
                           <h5 class="mb-0">
                             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Спортплощадки
+                                Тип обработки
                             </button>
                           </h5>
                         </div>
@@ -243,19 +280,19 @@
                                 <li>
                                     <label class="checkbox">
                                       <input type="checkbox">
-                                      <div class="checkbox-text">Прямоугольник</div>
+                                      <div class="checkbox-text">Вяленая</div>
                                     </label>
                                 </li>
                                 <li>
                                     <label class="checkbox">
                                       <input type="checkbox">
-                                      <div class="checkbox-text">Овал</div>
+                                      <div class="checkbox-text">Копченая</div>
                                     </label>
                                 </li>
                                 <li>
                                     <label class="checkbox">
                                       <input type="checkbox">
-                                      <div class="checkbox-text">Другое</div>
+                                      <div class="checkbox-text">Соленая</div>
                                     </label>
                                 </li>
                             </ul>
@@ -264,7 +301,7 @@
                       <div class="card">
                         <div class="card-header" id="headingThree">
                           <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Парковая мебель</button>
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Разделка</button>
                           </h5>
                         </div>
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionCatalog">
@@ -272,19 +309,25 @@
                                 <li>
                                     <label class="checkbox">
                                       <input type="checkbox">
-                                      <div class="checkbox-text">Прямоугольник</div>
+                                      <div class="checkbox-text">Филе</div>
                                     </label>
                                 </li>
                                 <li>
                                     <label class="checkbox">
                                       <input type="checkbox">
-                                      <div class="checkbox-text">Овал</div>
+                                      <div class="checkbox-text">Кусок/нарезка/стейки</div>
                                     </label>
                                 </li>
                                 <li>
                                     <label class="checkbox">
                                       <input type="checkbox">
-                                      <div class="checkbox-text">Другое</div>
+                                      <div class="checkbox-text">Тушки</div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="checkbox">
+                                      <input type="checkbox">
+                                      <div class="checkbox-text">Фарш</div>
                                     </label>
                                 </li>
                             </ul>
@@ -293,26 +336,27 @@
                     </div>
                 </div>
                 <div class="col-xl-9 col-lg-8 col-md-6 col-12">
+                    <div class="filterPopUp-btn">фильтры</div>
                     <div class="flex-catalog-top-wrp">
                         <div class="flex-cat-top">
-                            <p>Выбрано товаров: </p>
+                            <p>Выбрано товаров:&nbsp;</p>
                             <p class="flex-catalog-value">68</p>
                         </div>
                         <div class="flex-cat-top">
                             <p>Сортировка:</p>
-                            <div class="flex header-select">
+                            <div class="flex header-select header-select-catalog">
                                 <div class="custom-select-wrapper">
                                     <label for="tovar"></label>
                                     <select id="tovar">
-                                        <option value="По умолчанию" selected>По умолчанию</option>
+                                        <option value="по умолчанию" selected>по умолчанию</option>
                                         <option value="по цене">по цене</option>
                                         <option value="по популярности">по популярности</option>
                                         <option value="по новизне">по новизне</option>
                                     </select>
-                                    <div class="custom-select-head"><span>По умолчанию</span></div>
+                                    <div class="custom-select-head"><span>по умолчанию</span></div>
                                     <div class="custom-select-list-wrapper">
                                         <ul class="custom-select-list">
-                                            <li data-value="По умолчанию" class="selected">По умолчанию</li>
+                                            <li data-value="по умолчанию" class="selected">по умолчанию</li>
                                             <li data-value="по цене">по цене</li>
                                             <li data-value="по популярности">по популярности</li>
                                             <li data-value="по новизне">по новизне</li>
@@ -322,8 +366,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 col-12">
+                    <div class="row catalog-row-fish">
+                        <div class="col-xl-4 col-lg-6 col-12">
                             <a href="#" class="meet-slide meet-slide-other">
                                 <span class="meet-slide-img">
                                     <img src="../../build/img/meet1.png" alt="">
@@ -332,7 +376,124 @@
                                 <p class="meet-title">Сельдь 300+ атлантическая, 1/30 октябрь 2020 весовая</p>
                             </a>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-12">
+                        <div class="col-xl-4 col-lg-6 col-12">
+                            <a href="#" class="meet-slide meet-slide-other">
+                                <span class="meet-slide-img">
+                                    <img src="../../build/img/meet2.png" alt="">
+                                    <span class="meet-tag">Минтай</span>
+                                </span>
+                                <p class="meet-title">Минтай с/м, б/г 1/24 25+</p>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-12">
+                            <a href="#" class="meet-slide meet-slide-other">
+                                <span class="meet-slide-img">
+                                    <img src="../../build/img/meet3.png" alt="">
+                                    <span class="meet-tag">Камбала</span>
+                                </span>
+                                <p class="meet-title">Камбала ж/п н/р 1/22 м</p>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-12">
+                            <a href="#" class="meet-slide meet-slide-other">
+                                <span class="meet-slide-img">
+                                    <img src="../../build/img/meet2.png" alt="">
+                                    <span class="meet-tag">Минтай</span>
+                                </span>
+                                <p class="meet-title">Минтай с/м, б/г 1/24 25+</p>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-12">
+                            <a href="#" class="meet-slide meet-slide-other">
+                                <span class="meet-slide-img">
+                                    <img src="../../build/img/meet3.png" alt="">
+                                    <span class="meet-tag">Камбала</span>
+                                </span>
+                                <p class="meet-title">Камбала ж/п н/р 1/22 м</p>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-12">
+                            <a href="#" class="meet-slide meet-slide-other">
+                                <span class="meet-slide-img">
+                                    <img src="../../build/img/meet1.png" alt="">
+                                    <span class="meet-tag">Сельдь</span>
+                                </span>
+                                <p class="meet-title">Сельдь 300+ атлантическая, 1/30 октябрь 2020 весовая</p>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-12">
+                            <a href="#" class="meet-slide meet-slide-other">
+                                <span class="meet-slide-img">
+                                    <img src="../../build/img/meet1.png" alt="">
+                                    <span class="meet-tag">Сельдь</span>
+                                </span>
+                                <p class="meet-title">Сельдь 300+ атлантическая, 1/30 октябрь 2020 весовая</p>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lglg-6 col-12">
+                            <a href="#" class="meet-slide meet-slide-other">
+                                <span class="meet-slide-img">
+                                    <img src="../../build/img/meet2.png" alt="">
+                                    <span class="meet-tag">Минтай</span>
+                                </span>
+                                <p class="meet-title">Минтай с/м, б/г 1/24 25+</p>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-12">
+                            <a href="#" class="meet-slide meet-slide-other">
+                                <span class="meet-slide-img">
+                                    <img src="../../build/img/meet3.png" alt="">
+                                    <span class="meet-tag">Камбала</span>
+                                </span>
+                                <p class="meet-title">Камбала ж/п н/р 1/22 м</p>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-12">
+                            <a href="#" class="meet-slide meet-slide-other">
+                                <span class="meet-slide-img">
+                                    <img src="../../build/img/meet2.png" alt="">
+                                    <span class="meet-tag">Минтай</span>
+                                </span>
+                                <p class="meet-title">Минтай с/м, б/г 1/24 25+</p>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-12">
+                            <a href="#" class="meet-slide meet-slide-other">
+                                <span class="meet-slide-img">
+                                    <img src="../../build/img/meet3.png" alt="">
+                                    <span class="meet-tag">Камбала</span>
+                                </span>
+                                <p class="meet-title">Камбала ж/п н/р 1/22 м</p>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-12">
+                            <a href="#" class="meet-slide meet-slide-other">
+                                <span class="meet-slide-img">
+                                    <img src="../../build/img/meet1.png" alt="">
+                                    <span class="meet-tag">Сельдь</span>
+                                </span>
+                                <p class="meet-title">Сельдь 300+ атлантическая, 1/30 октябрь 2020 весовая</p>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-12">
+                            <a href="#" class="meet-slide meet-slide-other">
+                                <span class="meet-slide-img">
+                                    <img src="../../build/img/meet3.png" alt="">
+                                    <span class="meet-tag">Камбала</span>
+                                </span>
+                                <p class="meet-title">Камбала ж/п н/р 1/22 м</p>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-12">
+                            <a href="#" class="meet-slide meet-slide-other">
+                                <span class="meet-slide-img">
+                                    <img src="../../build/img/meet1.png" alt="">
+                                    <span class="meet-tag">Сельдь</span>
+                                </span>
+                                <p class="meet-title">Сельдь 300+ атлантическая, 1/30 октябрь 2020 весовая</p>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-12">
                             <a href="#" class="meet-slide meet-slide-other">
                                 <span class="meet-slide-img">
                                     <img src="../../build/img/meet2.png" alt="">
@@ -342,6 +503,7 @@
                             </a>
                         </div>
                     </div>
+                    <div id="pagination-container"></div>
                 </div>
             </div>
         </div>
@@ -440,7 +602,157 @@
 </footer>
 
         </div>
-        <div class="pop-up-overlay-wrapper">
+        <div class="pop-up-filter-mob">
+            <div id="filterPopUp" class="filterPopUp">
+    <div class="container">
+        <div class="top-title-wrp">
+            <h3>Фильтры</h3>
+            <div class="clear-filters-btn">
+                <span class="icon-close"></span>
+                <p>Сбросить</p>
+            </div>
+        </div>
+        <div id="accordionCatalogMob" class="accordion-catalog">
+          <div class="card">
+            <div class="card-header" id="headingOneMob">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOneMob" aria-expanded="false" aria-controls="collapseOneMob">
+                  Вид
+                </button>
+              </h5>
+            </div>
+            <div id="collapseOneMob" class="collapse" aria-labelledby="headingOneMob" data-parent="#accordionCatalogMob">
+              <ul class="card-body">
+                  <li>
+                      <label class="checkbox">
+                        <input type="checkbox">
+                        <div class="checkbox-text">Сельдь</div>
+                      </label>
+                  </li>
+                  <li>
+                      <label class="checkbox">
+                        <input type="checkbox">
+                        <div class="checkbox-text">Форель</div>
+                      </label>
+                  </li>
+                  <li>
+                      <label class="checkbox">
+                        <input type="checkbox">
+                        <div class="checkbox-text">Кижуч</div>
+                      </label>
+                  </li>
+                  <li>
+                      <label class="checkbox">
+                        <input type="checkbox">
+                        <div class="checkbox-text">Масляная</div>
+                      </label>
+                  </li>
+                  <li>
+                      <label class="checkbox">
+                        <input type="checkbox">
+                        <div class="checkbox-text">Марлин</div>
+                      </label>
+                  </li>
+                  <li>
+                      <label class="checkbox">
+                        <input type="checkbox">
+                        <div class="checkbox-text">Лосось (семга)</div>
+                      </label>
+                  </li>
+                  <li>
+                      <label class="checkbox">
+                        <input type="checkbox">
+                        <div class="checkbox-text">Камбала</div>
+                      </label>
+                  </li>
+                  <li>
+                      <label class="checkbox">
+                        <input type="checkbox">
+                        <div class="checkbox-text">Минтай</div>
+                      </label>
+                  </li>
+                  <li>
+                      <label class="checkbox">
+                        <input type="checkbox">
+                        <div class="checkbox-text">Кальмар</div>
+                      </label>
+                  </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwoMob">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwoMob" aria-expanded="false" aria-controls="collapseTwoMob">
+                    Тип обработки
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwoMob" class="collapse" aria-labelledby="headingTwoMob" data-parent="#accordionCatalogMob">
+                <ul class="card-body">
+                    <li>
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <div class="checkbox-text">Вяленая</div>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <div class="checkbox-text">Копченая</div>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <div class="checkbox-text">Соленая</div>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThreeMob">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThreeMob" aria-expanded="false" aria-controls="collapseThreeMob">Разделка</button>
+              </h5>
+            </div>
+            <div id="collapseThreeMob" class="collapse" aria-labelledby="headingThreeMob" data-parent="#accordionCatalogMob">
+                <ul class="card-body">
+                    <li>
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <div class="checkbox-text">Филе</div>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <div class="checkbox-text">Кусок/нарезка/стейки</div>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <div class="checkbox-text">Тушки</div>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <div class="checkbox-text">Фарш</div>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="pop-up-filterPopUp-close-btn"></div>
+</div>
+
+        </div>
+        <div class="pop-up-overlay-wrapper active">
             <div class="overlay-pop-up"></div>
             <div id="beClient" class="pop-up-general-block">
     <h2>Стать клиентом</h2>
@@ -559,6 +871,55 @@
     </form>
     <div class="pop-up-general-block-close-btn"></div>
 </div>
+<div class="pop-up-general-block pop-up-general-block-cart active">
+    <h2>Товар добавлен в корзину</h2>
+    <div class="pop-up-cart-content">
+        <div class="cart-main-block cartMainBlock">
+            <div class="cart-main-left">
+                <div class="cart-main-img">
+                    <img src="../../build/img/meet1.png" alt="">
+                </div>
+                <p class="cart-main-title">Сельдь 300+ атлантическая, 1/30 октябрь 2020 весовая</p>
+            </div>
+            <div>
+                <div class="cart-price-block cartBlock">
+                    <div class="cart-line-price">
+                        <p class="cart-price-word">За штуку:</p>
+                        <p class="cart-price-cifra cart-price-item"><span>300.15</span> ₽</p>
+                    </div>
+                    <div class="quantity quantity-cart">
+                        <div class="quantity-btn minus cartMinus"><span>-</span></div>
+                        <input type="text" placeholder="1" value="1" class="input-number quantity-cart-input">
+                        <div class="quantity-btn plus cartPlus"><span>+</span> </div>
+                    </div>
+                    <div class="cart-line-total">
+                        <p class="cart-price-word">Итого:</p>
+                        <p class="cart-price-cifra cart-price-total"><span>300.15</span> ₽</p>
+                    </div>
+                </div>
+                <div class="cart-price-block cartBlock">
+                    <div class="cart-line-price">
+                        <p class="cart-price-word">За коробку:</p>
+                        <p class="cart-price-cifra cart-price-item"><span>3000.00</span> ₽</p>
+                    </div>
+                    <div class="quantity quantity-cart">
+                        <div class="quantity-btn minus cartMinus"><span>-</span></div>
+                        <input type="text" placeholder="1" value="1" class="input-number quantity-cart-input">
+                        <div class="quantity-btn plus cartPlus"><span>+</span> </div>
+                    </div>
+                    <div class="cart-line-total">
+                        <p class="cart-price-word">Итого:</p>
+                        <p class="cart-price-cifra cart-price-total"><span>300.15</span> ₽</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pop-up-cart-bottom">
+            
+        </div>
+    </div>
+    <div class="pop-up-general-block-close-btn"></div>
+</div>
 
 <div id="thnx" class="pop-up-general-block thnx">
     <h2>Спасибо за Вашу заявку</h2>
@@ -580,6 +941,7 @@
     <script src="../../build/js/jquery.maskedinput.min.js"></script>
     <script src="../../build/js/customSelect.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="../../build/js/pagination.js"></script>
     <script src="../../build/js/main.js"></script>
     <script type="text/javascript">
         function validation (a) {

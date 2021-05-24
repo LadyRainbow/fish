@@ -12,7 +12,7 @@ const config = {
             placeholders: {}
         },
         pagesContent: {
-            file: 'catalog2\\catalog2.html',
+            file: 'product\\product.html',
             placeholders: {}
         },
         footer: {
@@ -21,10 +21,6 @@ const config = {
         },
         popup: {
             file: 'popup\\popup.html',
-            placeholders: {}
-        },
-        popupFilter: {
-            file: 'popup\\popUpFilter.html',
             placeholders: {}
         },
     }
