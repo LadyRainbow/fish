@@ -3,12 +3,12 @@ const config = {
     placeholders: {
         header: {
             copies: 1,
-            file: 'header\\header.html',
+            file: 'header\\headerIM.html',
             placeholders: {}
         },
         menu: {
             copies: 1,
-            file: 'menu\\menu.html',
+            file: 'menu\\menuIM.html',
             placeholders: {}
         },
         pagesContent: {

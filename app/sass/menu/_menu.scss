@@ -13,6 +13,16 @@
     &.active {
         display: block;
     }
+    .header-input-wrp {
+        flex: auto;
+        margin: 15px 15px 0;
+    }
+    .header-shop-link-im {
+        margin: 0 0 0 16px;
+    }
+    .header-delivery {
+        margin: 16px 0 16px 16px;
+    }
 }
 .menu-top {
     display: flex;

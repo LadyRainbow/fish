@@ -460,6 +460,20 @@ $(document).ready(function () {
         $popUpGeneralBlock.removeClass('active');
         $('#beSupplier').addClass('active');
     });
+    // 5 pop-up for Cart
+    $('.open-pop-cart-btn').click(function (e) {
+        $overlayPopUpWRP.addClass('active');
+        $('body, html').addClass('active');
+        $popUpGeneralBlock.removeClass('active');
+        $('#miniCartPopUp').addClass('active');
+    });
+    // 6 pop-up for One Click
+    $('.open-pop-one-click').click(function (e) {
+        $overlayPopUpWRP.addClass('active');
+        $('body, html').addClass('active');
+        $popUpGeneralBlock.removeClass('active');
+        $('#oneClickPopUp').addClass('active');
+    });
 
     $overlay.click(function () {
         $overlayPopUpWRP.removeClass('active');

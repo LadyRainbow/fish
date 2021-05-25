@@ -559,7 +559,7 @@
         <div class="pop-up-filter-mob">
             <!-- FileInjector:popupFilter -->
         </div>
-        <div class="pop-up-overlay-wrapper active">
+        <div class="pop-up-overlay-wrapper">
             <div class="overlay-pop-up"></div>
             <div id="beClient" class="pop-up-general-block">
     <h2>Стать клиентом</h2>
@@ -678,7 +678,30 @@
     </form>
     <div class="pop-up-general-block-close-btn"></div>
 </div>
-<div class="pop-up-general-block pop-up-general-block-cart active">
+<div id="oneClickPopUp" class="pop-up-general-block pop-up-general">
+    <h2>Заказ в 1 клик</h2>
+    <form>
+        <div class="input-style">
+            <p class="input-title">Ваше имя</p>
+            <input class="input-form input-valid" type="text" data-input="name" name="name">
+            <p class="input-error">Ошибка ввода</p>
+        </div>
+        <div class="input-style">
+            <p class="input-title">Номер телефона</p>
+            <input class="input-form input-valid mask-phone" type="tel" data-input="phone" name="phone" placeholder="+7 (">
+            <p class="input-error">Ошибка ввода</p>
+        </div>
+        <div class="check-form-wrp">
+            <label class="checkbox">
+                <input class="checkbox-check" type="checkbox"/>
+                <div class="checkbox-text">Я подтверждаю своё согласие на обработку<a href="/policy"> персональных данных</a></div>
+            </label>
+        </div>
+        <input type="submit" class="form-btn btn-checkbox btn-checkbox-disabled" value="Заказать">
+    </form>
+    <div class="pop-up-general-block-close-btn"></div>
+</div>
+<div id="miniCartPopUp" class="pop-up-general-block pop-up-general-block-cart">
     <h2>Товар добавлен в корзину</h2>
     <div class="pop-up-cart-content">
         <div class="cart-main-block cartMainBlock">
@@ -722,7 +745,14 @@
             </div>
         </div>
         <div class="pop-up-cart-bottom">
-            
+            <a href="#" class="back-cart-wrp">
+                <img src="../../build/img/arrow-right-short.svg" alt="">
+                <p>Продолжить покупки</p>
+            </a>
+            <div class="pop-up-cart-btn-wrp">
+                <div class="product-cart-btn white">Купить в 1 клик</div>
+                <div class="product-cart-btn red">Оформить заказ</div>
+            </div>
         </div>
     </div>
     <div class="pop-up-general-block-close-btn"></div>
