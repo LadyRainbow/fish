@@ -12,7 +12,7 @@ const config = {
             placeholders: {}
         },
         pagesContent: {
-            file: 'cart\\cart.html',
+            file: 'cart\\cartIM.html',
             placeholders: {}
         },
         footer: {

@@ -16,14 +16,14 @@
 <body class="">
     <div class="app">
         <div class="header-wrapper">
-            <header>
+            <header class="header-IM">
     <div class="container">
         <div class="header-top">
             <div class="header-left">
                 <div class="burger">
                     <span></span>
                 </div>
-                <a class="logo-img" href="/">
+                <a class="logo-img logo-img-im" href="/">
                     <img src="../../build/img/logo.svg" alt="">
                 </a>
                 <div class="header-phone-block">
@@ -55,58 +55,69 @@
                     <img src="../../build/img/map-icon.svg" alt="">
                     <span>Москва</span>
                 </a>
-                <a href="#" class="header-shop-link header-map-link-desctop">
-                    <img src="../../build/img/shop.svg" alt="">
-                    <span>Розничный магазин</span>
-                </a>
-                <a href="#" class="header-shop-link header-map-link-desctop">
-                    <img src="../../build/img/acc.svg" alt="">
-                    <span>Личный кабинет</span>
-                </a>
-            </div>
-            <div class="header-right">
                 <ul class="lang-list header-map-link-desctop">
                     <li class="active"><span>Ru</span></li>
                     <li><span>En</span></li>
                 </ul>
-                <div class="header-btn">Стать клиентом</div>
             </div>
+            <div class="header-im-mob">
+                <a href="#" class="header-shop-link header-shop-link-im header-map-link-desctop">
+                    <img src="../../build/img/acc.svg" alt="">
+                    <span>Личный кабинет</span>
+                </a>
+                <p class="product-cart-line">
+                    <img src="../../build/img/eva_shopping-cart-outline.svg" alt="">
+                </p>
+                <div class="header-count">
+                    <p>Товаров: 0</p>
+                    <p>0 ₽</p>
+                </div>
+            </div>
+            <ul class="header-list header-map-link-desctop">
+                <li class="active">
+                    <a href="#">Продукция</a>
+                </li>
+                <li>
+                    <a href="#">Акции</a>
+                </li>
+                <li>
+                    <a href="#">Доставка и оплата</a>
+                </li>
+                <li>
+                    <a href="#">Оптовым клиентам</a>
+                </li>
+            </ul>
         </div>
     </div>
     <div class="container">
-        <ul class="header-list header-map-link-desctop">
-            <li class="active">
-                <a href="#">Главная</a>
-            </li>
-            <li>
-                <a href="#">Продукция</a>
-            </li>
-            <li>
-                <a href="#">О компании</a>
-            </li>
-            <li>
-                <a href="#">Карьера</a>
-            </li>
-            <li>
-                <a href="#">Команда</a>
-            </li>
-            <li>
-                <a href="#">Работа с нами</a>
-            </li>
-            <li>
-                <a href="#">Новости</a>
-            </li>
-            <li>
-                <a href="#">Партнерам</a>
-            </li>
-            <li>
-                <a href="#">Документы</a>
-            </li>
-            <li>
-                <a href="#">Контакты</a>
-            </li>
-        </ul>
+        <div class="headerIM-bottom">
+            <a class="logo-img" href="/">
+                <img src="../../build/img/logo.svg" alt="">
+            </a>
+            <div class="header-delivery">
+                <p>Ближайшая доставка на:</p>
+                <p>08.02.2021 18:00</p>
+            </div>
+            <div class="header-input-wrp">
+                <input id="tags" type="text" name="" value="" placeholder="Начните вводить название">
+                <img src="../../build/img/search.svg" alt="">
+            </div>
+            <a href="#" class="header-shop-link header-shop-link-im header-map-link-desctop">
+                <img src="../../build/img/acc.svg" alt="">
+                <span>Личный кабинет</span>
+            </a>
+            <p class="product-cart-line">
+                <img src="../../build/img/eva_shopping-cart-outline.svg" alt="">
+            </p>
+            <div class="header-count">
+                <p>Товаров: 0</p>
+                <p>0 ₽</p>
+            </div>
+        </div>
+
+
     </div>
+
 </header>
 
         </div>
@@ -116,58 +127,46 @@
         <span></span>
     </div>
     <div class="menu-content">
-        <div class="menu-top">
-            <a href="#" class="header-map-link">
-                <img src="../../build/img/map-icon.svg" alt="">
-                <span>Москва</span>
-            </a>
-            <ul class="lang-list">
-                <li class="active"><span>Ru</span></li>
-                <li><span>En</span></li>
-            </ul>
+        <div>
+            <div class="menu-top">
+                <a href="#" class="header-map-link">
+                    <img src="../../build/img/map-icon.svg" alt="">
+                    <span>Москва</span>
+                </a>
+                <ul class="lang-list">
+                    <li class="active"><span>Ru</span></li>
+                    <li><span>En</span></li>
+                </ul>
+            </div>
+            <div class="header-input-wrp">
+                <input id="tagsMob" type="text" name="" value="" placeholder="Начните вводить название">
+                <img src="../../build/img/search.svg" alt="">
+            </div>
         </div>
         <div class="menu-bottom">
             <ul class="menu-list">
                 <li class="active">
-                    <a href="#">Главная</a>
-                </li>
-                <li>
                     <a href="#">Продукция</a>
                 </li>
                 <li>
-                    <a href="#">О компании</a>
+                    <a href="#">Акции</a>
                 </li>
                 <li>
-                    <a href="#">Карьера</a>
+                    <a href="#">Доставка и оплата</a>
                 </li>
                 <li>
-                    <a href="#">Команда</a>
-                </li>
-                <li>
-                    <a href="#">Работа с нами</a>
-                </li>
-                <li>
-                    <a href="#">Новости</a>
-                </li>
-                <li>
-                    <a href="#">Партнерам</a>
-                </li>
-                <li>
-                    <a href="#">Документы</a>
-                </li>
-                <li>
-                    <a href="#">Контакты</a>
+                    <a href="#">Оптовым клиентам</a>
                 </li>
             </ul>
             <div class="menu-shop-link-wrp">
-                <a href="#" class="menu-shop-link">
+                <a href="#" class="header-shop-link header-shop-link-im">
                     <img src="../../build/img/acc.svg" alt="">
                     <span>Личный кабинет</span>
                 </a>
-                <a href="#" class="menu-shop-link">
-                    <img src="../../build/img/shop.svg" alt="">
-                    <span>Розничный магазин</span>
-                </a>
+                <div class="header-delivery">
+                    <p>Ближайшая доставка на:</p>
+                    <p>08.02.2021 18:00</p>
+                </div>
                 <a href="tel:+7 (987) 123-45-67" class="menu-shop-link">
                     <img src="../../build/img/phone.svg" alt="">
                     <span>+7 (987) 123-45-67</span>
@@ -180,28 +179,54 @@
 
         </div>
         <div class="pages-wrapper">
-            <div class="cart-page">
+            <div class="product-page">
     <div class="container">
-        <h1>Корзина</h1>
-        <div class="cart-page-top">
-            <p class="cart-count">Товаров: 2</p>
-            <div class="clean-cart-line">
-                <img src="../../build/img/delete.svg" alt="">
-                <p>очистить корзину</p>
-            </div>
-        </div>
-        <div class="cart-main-block-wrp">
-            <div class="cart-main-block cartMainBlock">
-                <div class="cart-main-left">
-                    <img class="clean-cart-btn" src="../../build/img/delete.svg" alt="">
-                    <div class="cart-main-img">
-                        <img src="../../build/img/meet1.png" alt="">
+        <ul class="breadcrumbs-fish">
+            <li class="active"><a href="/">Каталог</a></li>
+            <li><a href="#">Белая рыба</a></li>
+            <li><a href="#">Сельдь</a></li>
+            <li><a href="#">Сельдь 300+ атлантическая, 1/30 октябрь 2020 весовая</a></li>
+        </ul>
+        <div class="product-content">
+            <div class="product-slider-wrp">
+                <div class="product-img-main">
+                    <div>
+                        <a data-fancybox="gallery" href="../../build/img/meet1.png" class="product-img-main-wrp">
+                            <img src="../../build/img/meet1.png" alt="">
+                        </a>
                     </div>
-                    <p class="cart-main-title">Сельдь 300+ атлантическая, 1/30 октябрь 2020 весовая</p>
+                    <div>
+                        <a data-fancybox="gallery" href="../../build/img/meet2.png" class="product-img-main-wrp">
+                            <img src="../../build/img/meet2.png" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a data-fancybox="gallery" href="../../build/img/meet3.png" class="product-img-main-wrp">
+                            <img src="../../build/img/meet3.png" alt="">
+                        </a>
+                    </div>
                 </div>
-                <div>
+                <div class="slider-prev-wrp">
+                    <div class="product-img-prev">
+                        <div class="product-img-prev-wrp">
+                            <img src="../../build/img/meet1.png" alt="">
+                        </div>
+                        <div class="product-img-prev-wrp">
+                            <img src="../../build/img/meet2.png" alt="">
+                        </div>
+                        <div class="product-img-prev-wrp">
+                            <img src="../../build/img/meet3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-info-wrp">
+                <p class="product-article">Артикул: 2487</p>
+                <p class="product-title">Сельдь 300+ атлантическая, 1/30 октябрь 2020 весовая</p>
+                <p class="product-instock"><span>В наличии</span></p>
+                <div class="cartMainBlock">
                     <div class="cart-price-block cartBlock">
-                        <div class="cart-line-price">
+                        <div>
                             <p class="cart-price-word">За штуку:</p>
                             <p class="cart-price-cifra cart-price-item"><span>300.15</span> ₽</p>
                         </div>
@@ -210,89 +235,229 @@
                             <input type="text" placeholder="1" value="1" class="input-number quantity-cart-input">
                             <div class="quantity-btn plus cartPlus"><span>+</span> </div>
                         </div>
-                        <div class="cart-line-total">
+                        <div>
                             <p class="cart-price-word">Итого:</p>
                             <p class="cart-price-cifra cart-price-total"><span>300.15</span> ₽</p>
                         </div>
                     </div>
                     <div class="cart-price-block cartBlock">
-                        <div class="cart-line-price">
+                        <div>
                             <p class="cart-price-word">За коробку:</p>
-                            <p class="cart-price-cifra cart-price-item"><span>3000.00</span> ₽</p>
+                            <p class="cart-price-cifra cart-price-item"><span>210.20</span> ₽</p>
                         </div>
                         <div class="quantity quantity-cart">
                             <div class="quantity-btn minus cartMinus"><span>-</span></div>
                             <input type="text" placeholder="1" value="1" class="input-number quantity-cart-input">
                             <div class="quantity-btn plus cartPlus"><span>+</span> </div>
                         </div>
-                        <div class="cart-line-total">
+                        <div>
                             <p class="cart-price-word">Итого:</p>
-                            <p class="cart-price-cifra cart-price-total"><span>300.15</span> ₽</p>
+                            <p class="cart-price-cifra cart-price-total"><span>210.20</span> ₽</p>
                         </div>
                     </div>
-                </div>
-                <div class="cart-main-line-end">
-                    <p class="cart-price-word">Всего:</p>
-                    <p class="total-summa-style total-summa"><span>4500</span> ₽</p>
-                </div>
-            </div>
-            <div class="cart-main-block cartMainBlock">
-                <div class="cart-main-left">
-                    <img class="clean-cart-btn" src="../../build/img/delete.svg" alt="">
-                    <div class="cart-main-img">
-                        <img src="../../build/img/meet2.png" alt="">
-                    </div>
-                    <p class="cart-main-title">Сельдь 300+ атлантическая, 1/30 октябрь 2020 весовая</p>
-                </div>
-                <div>
-                    <div class="cart-price-block cartBlock">
-                        <div class="cart-line-price">
-                            <p class="cart-price-word">За штуку:</p>
-                            <p class="cart-price-cifra cart-price-item"><span>40.15</span> ₽</p>
-                        </div>
-                        <div class="quantity quantity-cart">
-                            <div class="quantity-btn minus cartMinus"><span>-</span></div>
-                            <input type="text" placeholder="1" value="1" class="input-number quantity-cart-input">
-                            <div class="quantity-btn plus cartPlus"><span>+</span> </div>
-                        </div>
-                        <div class="cart-line-total">
-                            <p class="cart-price-word">Итого:</p>
-                            <p class="cart-price-cifra cart-price-total"><span>300.15</span> ₽</p>
-                        </div>
-                    </div>
-                    <div class="cart-price-block cartBlock">
-                        <div class="cart-line-price">
-                            <p class="cart-price-word">За коробку:</p>
-                            <p class="cart-price-cifra cart-price-item"><span>80.00</span> ₽</p>
-                        </div>
-                        <div class="quantity quantity-cart">
-                            <div class="quantity-btn minus cartMinus"><span>-</span></div>
-                            <input type="text" placeholder="1" value="1" class="input-number quantity-cart-input">
-                            <div class="quantity-btn plus cartPlus"><span>+</span> </div>
-                        </div>
-                        <div class="cart-line-total">
-                            <p class="cart-price-word">Итого:</p>
-                            <p class="cart-price-cifra cart-price-total"><span>300.15</span> ₽</p>
-                        </div>
+                    <div class="total-block">
+                        <p class="cart-price-word">Вы выбрали <br>на сумму:</p>
+                        <p class="total-summa-style total-summa"><span>4500</span> ₽</p>
                     </div>
                 </div>
-                <div class="cart-main-line-end">
-                    <p class="cart-price-word">Всего:</p>
-                    <p class="total-summa-style total-summa"><span>4500</span> ₽</p>
+                <div class="product-cart-btn-wrp">
+                    <div class="product-cart-btn white">Купить в 1 клик</div>
+                    <div class="product-cart-btn red">добавить в корзину</div>
+                </div>
+                <div id="accordionProduct" class="accordion-product">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                          Основная информация
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionProduct">
+                        <ul class="card-body">
+                            <li>
+                                <p class="property">
+                                    <span>Вид</span>
+                                    <span class="dots"></span>
+                                </p>
+                                <p class="value">Белая рыба</p>
+                            </li>
+                            <li>
+                                <p class="property">
+                                    <span>Тип обработки</span>
+                                    <span class="dots"></span>
+                                </p>
+                                <p class="value">Соленая</p>
+                            </li>
+                            <li>
+                                <p class="property">
+                                    <span>Разделка</span>
+                                    <span class="dots"></span>
+                                </p>
+                                <p class="value">Тушки</p>
+                            </li>
+                            <li>
+                                <p class="property">
+                                    <span>Срок годности</span>
+                                    <span class="dots"></span>
+                                </p>
+                                <p class="value">Февраль 2021</p>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            КБЖУ
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionProduct">
+                        <ul class="card-body">
+                            <li>
+                                <p class="property">
+                                    <span>Вид</span>
+                                    <span class="dots"></span>
+                                </p>
+                                <p class="value">Белая рыба</p>
+                            </li>
+                            <li>
+                                <p class="property">
+                                    <span>Тип обработки</span>
+                                    <span class="dots"></span>
+                                </p>
+                                <p class="value">Соленая</p>
+                            </li>
+                            <li>
+                                <p class="property">
+                                    <span>Разделка</span>
+                                    <span class="dots"></span>
+                                </p>
+                                <p class="value">Тушки</p>
+                            </li>
+                            <li>
+                                <p class="property">
+                                    <span>Срок годности</span>
+                                    <span class="dots"></span>
+                                </p>
+                                <p class="value">Февраль 2021</p>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Остальная информация</button>
+                      </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionProduct">
+                        <ul class="card-body">
+                            <li>
+                                <p class="property">
+                                    <span>Вид</span>
+                                    <span class="dots"></span>
+                                </p>
+                                <p class="value">Белая рыба</p>
+                            </li>
+                            <li>
+                                <p class="property">
+                                    <span>Тип обработки</span>
+                                    <span class="dots"></span>
+                                </p>
+                                <p class="value">Соленая</p>
+                            </li>
+                            <li>
+                                <p class="property">
+                                    <span>Разделка</span>
+                                    <span class="dots"></span>
+                                </p>
+                                <p class="value">Тушки</p>
+                            </li>
+                            <li>
+                                <p class="property">
+                                    <span>Срок годности</span>
+                                    <span class="dots"></span>
+                                </p>
+                                <p class="value">Февраль 2021</p>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
                 </div>
             </div>
         </div>
-        <div class="final-summa-wrp">
-            <div class="final-summa-flex">
-                <input type="text" name="" value="" class="final-summa-input" placeholder="Введите промокод">
-                <div class="add-promo">Применить</div>
-            </div>
-            <div class="final-summa-flex">
-                <div>
-                    <p class="final-summa-text">Итоговая сумма:</p>
-                    <p class="final-summa-cifra"><span>2 400</span> ₽</p>
+        <div class="other-products">
+            <h2>Вас может заинтересовать</h2>
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                    <a href="#" class="meet-slide meet-slide-other meet-product-card">
+                        <span class="meet-slide-img">
+                            <img src="../../build/img/meet3.png" alt="">
+                            <span class="meet-tag">Камбала</span>
+                        </span>
+                        <p class="meet-title">Камбала ж/п н/р 1/22 м</p>
+                        <span class="product-price-cart-line">
+                            <p class="product-price-line">от 300 ₽</p>
+                            <p class="product-cart-line">
+                                <img src="../../build/img/eva_shopping-cart-outline.svg" alt="">
+                            </p>
+                        </span>
+                    </a>
                 </div>
-                <div class="final-btn">Оформить заказ</div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                    <a href="#" class="meet-slide meet-slide-other meet-product-card">
+                        <div>
+                            <span class="meet-slide-img">
+                                <img src="../../build/img/meet1.png" alt="">
+                                <span class="meet-tag">Сельдь</span>
+                            </span>
+                            <p class="meet-title">Сельдь 300+ атлантическая, 1/30 октябрь 2020 весовая</p>
+                        </div>
+                        <span class="product-price-cart-line">
+                            <p class="product-price-line">от 300 ₽</p>
+                            <p class="product-cart-line">
+                                <img src="../../build/img/eva_shopping-cart-outline.svg" alt="">
+                            </p>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                    <a href="#" class="meet-slide meet-slide-other meet-product-card">
+                        <div>
+                            <span class="meet-slide-img">
+                                <img src="../../build/img/meet3.png" alt="">
+                                <span class="meet-tag">Камбала</span>
+                            </span>
+                            <p class="meet-title">Камбала ж/п н/р 1/22 м</p>
+                        </div>
+                        <span class="product-price-cart-line">
+                            <p class="product-price-line">от 300 ₽</p>
+                            <p class="product-cart-line">
+                                <img src="../../build/img/eva_shopping-cart-outline.svg" alt="">
+                            </p>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                    <a href="#" class="meet-slide meet-slide-other meet-product-card">
+                        <div>
+                            <span class="meet-slide-img">
+                                <img src="../../build/img/meet2.png" alt="">
+                                <span class="meet-tag">Минтай</span>
+                            </span>
+                            <p class="meet-title">Минтай с/м, б/г 1/24 25+</p>
+                        </div>
+                        <span class="product-price-cart-line">
+                            <p class="product-price-line">от 300 ₽</p>
+                            <p class="product-cart-line">
+                                <img src="../../build/img/eva_shopping-cart-outline.svg" alt="">
+                            </p>
+                        </span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

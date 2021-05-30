@@ -99,7 +99,7 @@
                 <p>08.02.2021 18:00</p>
             </div>
             <div class="header-input-wrp">
-                <input type="text" name="" value="" placeholder="Начните вводить название">
+                <input id="tags" type="text" name="" value="" placeholder="Начните вводить название">
                 <img src="../../build/img/search.svg" alt="">
             </div>
             <a href="#" class="header-shop-link header-shop-link-im header-map-link-desctop">
@@ -139,7 +139,7 @@
                 </ul>
             </div>
             <div class="header-input-wrp">
-                <input type="text" name="" value="" placeholder="Начните вводить название">
+                <input id="tagsMob" type="text" name="" value="" placeholder="Начните вводить название">
                 <img src="../../build/img/search.svg" alt="">
             </div>
         </div>
@@ -446,138 +446,393 @@
                     </div>
                     <div class="row catalog-row-fish">
                         <div class="col-xl-4 col-lg-6 col-12">
-                            <a href="#" class="meet-slide meet-slide-other">
-                                <span class="meet-slide-img">
-                                    <img src="../../build/img/meet1.png" alt="">
-                                    <span class="meet-tag">Сельдь</span>
+                            <a href="#" class="meet-slide meet-catalog-card">
+                                <div>
+                                    <span class="meet-slide-img">
+                                        <img src="../../build/img/meet1.png" alt="">
+                                        <span class="meet-tag">Сельдь</span>
+                                    </span>
+                                    <p class="meet-title">Сельдь 300+ атлантическая, 1/30 октябрь 2020 весовая</p>
+                                </div>
+                                <span class="meet-im-bottom">
+                                    <div>
+                                        <p>
+                                            <span>300 ₽</span>
+                                            <span>/шт</span>
+                                        </p>
+                                        <p>
+                                            <span>2 500 ₽</span>
+                                            <span>/коробка</span>
+                                        </p>
+                                    </div>
+                                    <p class="product-cart-line">
+                                        <img src="../../build/img/eva_shopping-cart-outline.svg" alt="">
+                                    </p>
                                 </span>
-                                <p class="meet-title">Сельдь 300+ атлантическая, 1/30 октябрь 2020 весовая</p>
                             </a>
                         </div>
                         <div class="col-xl-4 col-lg-6 col-12">
-                            <a href="#" class="meet-slide meet-slide-other">
-                                <span class="meet-slide-img">
-                                    <img src="../../build/img/meet2.png" alt="">
-                                    <span class="meet-tag">Минтай</span>
+                            <a href="#" class="meet-slide meet-catalog-card">
+                                <div>
+                                    <span class="meet-slide-img">
+                                        <img src="../../build/img/meet2.png" alt="">
+                                        <span class="meet-tag">Минтай</span>
+                                    </span>
+                                    <p class="meet-title">Минтай с/м, б/г 1/24 25+</p>
+                                </div>
+                                <span class="meet-im-bottom">
+                                    <div>
+                                        <p>
+                                            <span>200 ₽</span>
+                                            <span>/шт</span>
+                                        </p>
+                                        <p>
+                                            <span>1 800 ₽</span>
+                                            <span>/коробка</span>
+                                        </p>
+                                    </div>
+                                    <p class="product-cart-line">
+                                        <img src="../../build/img/eva_shopping-cart-outline.svg" alt="">
+                                    </p>
                                 </span>
-                                <p class="meet-title">Минтай с/м, б/г 1/24 25+</p>
                             </a>
                         </div>
                         <div class="col-xl-4 col-lg-6 col-12">
-                            <a href="#" class="meet-slide meet-slide-other">
-                                <span class="meet-slide-img">
-                                    <img src="../../build/img/meet3.png" alt="">
-                                    <span class="meet-tag">Камбала</span>
+                            <a href="#" class="meet-slide meet-catalog-card">
+                                <div>
+                                    <span class="meet-slide-img">
+                                        <img src="../../build/img/meet3.png" alt="">
+                                        <span class="meet-tag">Камбала</span>
+                                    </span>
+                                    <p class="meet-title">Камбала ж/п н/р 1/22 м</p>
+                                </div>
+                                <span class="meet-im-bottom">
+                                    <div>
+                                        <p>
+                                            <span>200 ₽</span>
+                                            <span>/шт</span>
+                                        </p>
+                                        <p>
+                                            <span>1 800 ₽</span>
+                                            <span>/коробка</span>
+                                        </p>
+                                    </div>
+                                    <p class="product-cart-line">
+                                        <img src="../../build/img/eva_shopping-cart-outline.svg" alt="">
+                                    </p>
                                 </span>
-                                <p class="meet-title">Камбала ж/п н/р 1/22 м</p>
                             </a>
                         </div>
                         <div class="col-xl-4 col-lg-6 col-12">
-                            <a href="#" class="meet-slide meet-slide-other">
-                                <span class="meet-slide-img">
-                                    <img src="../../build/img/meet2.png" alt="">
-                                    <span class="meet-tag">Минтай</span>
+                            <a href="#" class="meet-slide meet-catalog-card">
+                                <div>
+                                    <span class="meet-slide-img">
+                                        <img src="../../build/img/meet2.png" alt="">
+                                        <span class="meet-tag">Минтай</span>
+                                    </span>
+                                    <p class="meet-title">Минтай с/м, б/г 1/24 25+</p>
+                                </div>
+                                <span class="meet-im-bottom">
+                                    <div>
+                                        <p>
+                                            <span>200 ₽</span>
+                                            <span>/шт</span>
+                                        </p>
+                                        <p>
+                                            <span>1 800 ₽</span>
+                                            <span>/коробка</span>
+                                        </p>
+                                    </div>
+                                    <p class="product-cart-line">
+                                        <img src="../../build/img/eva_shopping-cart-outline.svg" alt="">
+                                    </p>
                                 </span>
-                                <p class="meet-title">Минтай с/м, б/г 1/24 25+</p>
                             </a>
                         </div>
                         <div class="col-xl-4 col-lg-6 col-12">
-                            <a href="#" class="meet-slide meet-slide-other">
-                                <span class="meet-slide-img">
-                                    <img src="../../build/img/meet3.png" alt="">
-                                    <span class="meet-tag">Камбала</span>
+                            <a href="#" class="meet-slide meet-catalog-card">
+                                <div>
+                                    <span class="meet-slide-img">
+                                        <img src="../../build/img/meet3.png" alt="">
+                                        <span class="meet-tag">Камбала</span>
+                                    </span>
+                                    <p class="meet-title">Камбала ж/п н/р 1/22 м</p>
+                                </div>
+                                <span class="meet-im-bottom">
+                                    <div>
+                                        <p>
+                                            <span>200 ₽</span>
+                                            <span>/шт</span>
+                                        </p>
+                                        <p>
+                                            <span>1 800 ₽</span>
+                                            <span>/коробка</span>
+                                        </p>
+                                    </div>
+                                    <p class="product-cart-line">
+                                        <img src="../../build/img/eva_shopping-cart-outline.svg" alt="">
+                                    </p>
                                 </span>
-                                <p class="meet-title">Камбала ж/п н/р 1/22 м</p>
                             </a>
                         </div>
                         <div class="col-xl-4 col-lg-6 col-12">
-                            <a href="#" class="meet-slide meet-slide-other">
-                                <span class="meet-slide-img">
-                                    <img src="../../build/img/meet1.png" alt="">
-                                    <span class="meet-tag">Сельдь</span>
+                            <a href="#" class="meet-slide meet-catalog-card">
+                                <div>
+                                    <span class="meet-slide-img">
+                                        <img src="../../build/img/meet1.png" alt="">
+                                        <span class="meet-tag">Сельдь</span>
+                                    </span>
+                                    <p class="meet-title">Сельдь 300+ атлантическая, 1/30 октябрь 2020 весовая</p>
+                                </div>
+                                <span class="meet-im-bottom">
+                                    <div>
+                                        <p>
+                                            <span>200 ₽</span>
+                                            <span>/шт</span>
+                                        </p>
+                                        <p>
+                                            <span>1 800 ₽</span>
+                                            <span>/коробка</span>
+                                        </p>
+                                    </div>
+                                    <p class="product-cart-line">
+                                        <img src="../../build/img/eva_shopping-cart-outline.svg" alt="">
+                                    </p>
                                 </span>
-                                <p class="meet-title">Сельдь 300+ атлантическая, 1/30 октябрь 2020 весовая</p>
                             </a>
                         </div>
                         <div class="col-xl-4 col-lg-6 col-12">
-                            <a href="#" class="meet-slide meet-slide-other">
-                                <span class="meet-slide-img">
-                                    <img src="../../build/img/meet1.png" alt="">
-                                    <span class="meet-tag">Сельдь</span>
+                            <a href="#" class="meet-slide meet-catalog-card">
+                                <div>
+                                    <span class="meet-slide-img">
+                                        <img src="../../build/img/meet1.png" alt="">
+                                        <span class="meet-tag">Сельдь</span>
+                                    </span>
+                                    <p class="meet-title">Сельдь 300+ атлантическая, 1/30 октябрь 2020 весовая</p>
+                                </div>
+                                <span class="meet-im-bottom">
+                                    <div>
+                                        <p>
+                                            <span>200 ₽</span>
+                                            <span>/шт</span>
+                                        </p>
+                                        <p>
+                                            <span>1 800 ₽</span>
+                                            <span>/коробка</span>
+                                        </p>
+                                    </div>
+                                    <p class="product-cart-line">
+                                        <img src="../../build/img/eva_shopping-cart-outline.svg" alt="">
+                                    </p>
                                 </span>
-                                <p class="meet-title">Сельдь 300+ атлантическая, 1/30 октябрь 2020 весовая</p>
-                            </a>
-                        </div>
-                        <div class="col-xl-4 col-lglg-6 col-12">
-                            <a href="#" class="meet-slide meet-slide-other">
-                                <span class="meet-slide-img">
-                                    <img src="../../build/img/meet2.png" alt="">
-                                    <span class="meet-tag">Минтай</span>
-                                </span>
-                                <p class="meet-title">Минтай с/м, б/г 1/24 25+</p>
-                            </a>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-12">
-                            <a href="#" class="meet-slide meet-slide-other">
-                                <span class="meet-slide-img">
-                                    <img src="../../build/img/meet3.png" alt="">
-                                    <span class="meet-tag">Камбала</span>
-                                </span>
-                                <p class="meet-title">Камбала ж/п н/р 1/22 м</p>
-                            </a>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-12">
-                            <a href="#" class="meet-slide meet-slide-other">
-                                <span class="meet-slide-img">
-                                    <img src="../../build/img/meet2.png" alt="">
-                                    <span class="meet-tag">Минтай</span>
-                                </span>
-                                <p class="meet-title">Минтай с/м, б/г 1/24 25+</p>
                             </a>
                         </div>
                         <div class="col-xl-4 col-lg-6 col-12">
-                            <a href="#" class="meet-slide meet-slide-other">
-                                <span class="meet-slide-img">
-                                    <img src="../../build/img/meet3.png" alt="">
-                                    <span class="meet-tag">Камбала</span>
+                            <a href="#" class="meet-slide meet-catalog-card">
+                                <div>
+                                    <span class="meet-slide-img">
+                                        <img src="../../build/img/meet2.png" alt="">
+                                        <span class="meet-tag">Минтай</span>
+                                    </span>
+                                    <p class="meet-title">Минтай с/м, б/г 1/24 25+</p>
+                                </div>
+                                <span class="meet-im-bottom">
+                                    <div>
+                                        <p>
+                                            <span>200 ₽</span>
+                                            <span>/шт</span>
+                                        </p>
+                                        <p>
+                                            <span>1 800 ₽</span>
+                                            <span>/коробка</span>
+                                        </p>
+                                    </div>
+                                    <p class="product-cart-line">
+                                        <img src="../../build/img/eva_shopping-cart-outline.svg" alt="">
+                                    </p>
                                 </span>
-                                <p class="meet-title">Камбала ж/п н/р 1/22 м</p>
                             </a>
                         </div>
                         <div class="col-xl-4 col-lg-6 col-12">
-                            <a href="#" class="meet-slide meet-slide-other">
-                                <span class="meet-slide-img">
-                                    <img src="../../build/img/meet1.png" alt="">
-                                    <span class="meet-tag">Сельдь</span>
+                            <a href="#" class="meet-slide meet-catalog-card">
+                                <div>
+                                    <span class="meet-slide-img">
+                                        <img src="../../build/img/meet3.png" alt="">
+                                        <span class="meet-tag">Камбала</span>
+                                    </span>
+                                    <p class="meet-title">Камбала ж/п н/р 1/22 м</p>
+                                </div>
+                                <span class="meet-im-bottom">
+                                    <div>
+                                        <p>
+                                            <span>200 ₽</span>
+                                            <span>/шт</span>
+                                        </p>
+                                        <p>
+                                            <span>1 800 ₽</span>
+                                            <span>/коробка</span>
+                                        </p>
+                                    </div>
+                                    <p class="product-cart-line">
+                                        <img src="../../build/img/eva_shopping-cart-outline.svg" alt="">
+                                    </p>
                                 </span>
-                                <p class="meet-title">Сельдь 300+ атлантическая, 1/30 октябрь 2020 весовая</p>
                             </a>
                         </div>
                         <div class="col-xl-4 col-lg-6 col-12">
-                            <a href="#" class="meet-slide meet-slide-other">
-                                <span class="meet-slide-img">
-                                    <img src="../../build/img/meet3.png" alt="">
-                                    <span class="meet-tag">Камбала</span>
+                            <a href="#" class="meet-slide meet-catalog-card">
+                                <div>
+                                    <span class="meet-slide-img">
+                                        <img src="../../build/img/meet2.png" alt="">
+                                        <span class="meet-tag">Минтай</span>
+                                    </span>
+                                    <p class="meet-title">Минтай с/м, б/г 1/24 25+</p>
+                                </div>
+                                <span class="meet-im-bottom">
+                                    <div>
+                                        <p>
+                                            <span>200 ₽</span>
+                                            <span>/шт</span>
+                                        </p>
+                                        <p>
+                                            <span>1 800 ₽</span>
+                                            <span>/коробка</span>
+                                        </p>
+                                    </div>
+                                    <p class="product-cart-line">
+                                        <img src="../../build/img/eva_shopping-cart-outline.svg" alt="">
+                                    </p>
                                 </span>
-                                <p class="meet-title">Камбала ж/п н/р 1/22 м</p>
                             </a>
                         </div>
                         <div class="col-xl-4 col-lg-6 col-12">
-                            <a href="#" class="meet-slide meet-slide-other">
-                                <span class="meet-slide-img">
-                                    <img src="../../build/img/meet1.png" alt="">
-                                    <span class="meet-tag">Сельдь</span>
+                            <a href="#" class="meet-slide meet-catalog-card">
+                                <div>
+                                    <span class="meet-slide-img">
+                                        <img src="../../build/img/meet3.png" alt="">
+                                        <span class="meet-tag">Камбала</span>
+                                    </span>
+                                    <p class="meet-title">Камбала ж/п н/р 1/22 м</p>
+                                </div>
+                                <span class="meet-im-bottom">
+                                    <div>
+                                        <p>
+                                            <span>200 ₽</span>
+                                            <span>/шт</span>
+                                        </p>
+                                        <p>
+                                            <span>1 800 ₽</span>
+                                            <span>/коробка</span>
+                                        </p>
+                                    </div>
+                                    <p class="product-cart-line">
+                                        <img src="../../build/img/eva_shopping-cart-outline.svg" alt="">
+                                    </p>
                                 </span>
-                                <p class="meet-title">Сельдь 300+ атлантическая, 1/30 октябрь 2020 весовая</p>
                             </a>
                         </div>
                         <div class="col-xl-4 col-lg-6 col-12">
-                            <a href="#" class="meet-slide meet-slide-other">
-                                <span class="meet-slide-img">
-                                    <img src="../../build/img/meet2.png" alt="">
-                                    <span class="meet-tag">Минтай</span>
+                            <a href="#" class="meet-slide meet-catalog-card">
+                                <div>
+                                    <span class="meet-slide-img">
+                                        <img src="../../build/img/meet1.png" alt="">
+                                        <span class="meet-tag">Сельдь</span>
+                                    </span>
+                                    <p class="meet-title">Сельдь 300+ атлантическая, 1/30 октябрь 2020 весовая</p>
+                                </div>
+                                <span class="meet-im-bottom">
+                                    <div>
+                                        <p>
+                                            <span>200 ₽</span>
+                                            <span>/шт</span>
+                                        </p>
+                                        <p>
+                                            <span>1 800 ₽</span>
+                                            <span>/коробка</span>
+                                        </p>
+                                    </div>
+                                    <p class="product-cart-line">
+                                        <img src="../../build/img/eva_shopping-cart-outline.svg" alt="">
+                                    </p>
                                 </span>
-                                <p class="meet-title">Минтай с/м, б/г 1/24 25+</p>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-12">
+                            <a href="#" class="meet-slide meet-catalog-card">
+                                <div>
+                                    <span class="meet-slide-img">
+                                        <img src="../../build/img/meet3.png" alt="">
+                                        <span class="meet-tag">Камбала</span>
+                                    </span>
+                                    <p class="meet-title">Камбала ж/п н/р 1/22 м</p>
+                                </div>
+                                <span class="meet-im-bottom">
+                                    <div>
+                                        <p>
+                                            <span>200 ₽</span>
+                                            <span>/шт</span>
+                                        </p>
+                                        <p>
+                                            <span>1 800 ₽</span>
+                                            <span>/коробка</span>
+                                        </p>
+                                    </div>
+                                    <p class="product-cart-line">
+                                        <img src="../../build/img/eva_shopping-cart-outline.svg" alt="">
+                                    </p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-12">
+                            <a href="#" class="meet-slide meet-catalog-card">
+                                <div>
+                                    <span class="meet-slide-img">
+                                        <img src="../../build/img/meet1.png" alt="">
+                                        <span class="meet-tag">Сельдь</span>
+                                    </span>
+                                    <p class="meet-title">Сельдь 300+ атлантическая, 1/30 октябрь 2020 весовая</p>
+                                </div>
+                                <span class="meet-im-bottom">
+                                    <div>
+                                        <p>
+                                            <span>200 ₽</span>
+                                            <span>/шт</span>
+                                        </p>
+                                        <p>
+                                            <span>1 800 ₽</span>
+                                            <span>/коробка</span>
+                                        </p>
+                                    </div>
+                                    <p class="product-cart-line">
+                                        <img src="../../build/img/eva_shopping-cart-outline.svg" alt="">
+                                    </p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-12">
+                            <a href="#" class="meet-slide meet-catalog-card">
+                                <div>
+                                    <span class="meet-slide-img">
+                                        <img src="../../build/img/meet2.png" alt="">
+                                        <span class="meet-tag">Минтай</span>
+                                    </span>
+                                    <p class="meet-title">Минтай с/м, б/г 1/24 25+</p>
+                                </div>
+                                <span class="meet-im-bottom">
+                                    <div>
+                                        <p>
+                                            <span>200 ₽</span>
+                                            <span>/шт</span>
+                                        </p>
+                                        <p>
+                                            <span>1 800 ₽</span>
+                                            <span>/коробка</span>
+                                        </p>
+                                    </div>
+                                    <p class="product-cart-line">
+                                        <img src="../../build/img/eva_shopping-cart-outline.svg" alt="">
+                                    </p>
+                                </span>
                             </a>
                         </div>
                     </div>

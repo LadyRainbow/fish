@@ -322,6 +322,35 @@
         color: #7D8085;
     }
 }
+.meet-catalog-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.meet-im-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+    & > div {
+        p {
+            span {
+                font-family: 'Gilroy', sans-serif;
+                line-height: 1.2;
+                &:first-child {
+                    font-weight: bold;
+                    font-size: 18px;
+                    color: #3F5883;
+                }
+                &:last-child {
+                    font-weight: 5002;
+                    font-size: 12px;
+                    color: #4B4B4B;
+                }
+            }
+        }
+    }
+}
 // @media
 @media (max-width: 1050px) {
     .catalog2-page {
@@ -382,6 +411,12 @@
         }
         .card-body li {
             margin-top: 24px;
+        }
+    }
+    .catalog-row-fish .col-12 {
+        padding: 0 30px;
+        .meet-slide {
+            padding: 20px 20px 24px;
         }
     }
 }

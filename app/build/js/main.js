@@ -167,6 +167,86 @@ $(document).ready(function () {
         ]
     });
 
+    $('.catalog-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        prevArrow: $('.prev-catalog-arrow'),
+        nextArrow: $('.next-catalog-arrow'),
+        dots: false,
+    });
+
+    // abour sliders
+    // slider-gramota
+    $('.slider-gramota').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        prevArrow: $('.prev-gramota-arrow'),
+        nextArrow: $('.next-gramota-arrow'),
+        dots: false,
+        variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
+    });
+
+    $().fancybox({
+        selector : '.slider-gramota .slick-slide:not(.slick-cloned) .fancy-link',
+        backFocus : false
+    });
+
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#tags" ).autocomplete({
+       source: availableTags
+    });
+    $( "#tagsMob" ).autocomplete({
+       source: availableTags
+    });
+    // slider-vehi
+    // $('.slider-vehi').slick({
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     fade: true,
+    //     dots: true,
+    //     prevArrow: $('.prev-vehi-arrow'),
+    //     nextArrow: $('.next-vehi-arrow'),
+    //     appendDots: '.dots-vehi-wrp',
+    //     customPaging : function(slider, i) {
+    //         var title = $(slider.$slides[i]).data('title');
+    //         return '<a class="pager__item"> '+title+' </a>';
+    //     },
+    // });
+
+
 
    // form checked
     $('.checkbox-check').change(function() {
@@ -486,32 +566,62 @@ $(document).ready(function () {
         $popUpGeneralBlock.removeClass('active');
     });
 
-    // map section
-    ymaps.ready(init);
+    // drag & drop
+    var $fileInput = $('.file-input');
 
-    var centerMap = [59.795277, 30.820440];
-    function init(){
-        // Создание экземпляра карты и его привязка к контейнеру с
-        // заданным id ("map").
-        myMap = new ymaps.Map('map', {
-            // При инициализации карты обязательно нужно указать
-            // её центр и коэффициент масштабирования.
-            center: centerMap, // Москва
-            zoom: 8
-        });
+    // highlight drag area
+    $fileInput.on('dragenter focus click', function() {
+      $(this).closest('.file-drop-area').addClass('is-active');
+    });
 
-        myGeoObject = new ymaps.GeoObject({
-           // Описание геометрии.
-           geometry: {
-               type: "Point",
-               coordinates: centerMap,
-               // iconContent: '12'
-           },
-        },
-        {
-            preset: 'islands#darkBlueDotIcon'
-        });
-        myMap.geoObjects.add(myGeoObject);
-    };
+    // back to normal state
+    $fileInput.on('dragleave blur drop', function() {
+      $(this).closest('.file-drop-area').removeClass('is-active');
+    });
+
+    // change inner text
+    $fileInput.on('change', function() {
+        var thisInput = $(this);
+      var filesCount = $(this)[0].files.length;
+      var filesSize = this.files[0].size;
+      var filesSizeKb;
+      var $textContainer = thisInput.closest('.file-drop-area').find('.file-msg');
+
+    if (filesCount > 0)  {
+        if (filesSize > 10048576) {
+            thisInput.closest('.file-drop-area').find('.drop-success').addClass('hidden');
+            thisInput.closest('.file-drop-area').find('.drop-error').removeClass('hidden');
+            thisInput.val('');
+        } else {
+            thisInput.closest('.file-drop-area').addClass('active');
+
+            thisInput.closest('.file-drop-area').find('.drop-success').removeClass('hidden');
+            thisInput.closest('.file-drop-area').find('.drop-error').addClass('hidden');
+
+            thisInput.closest('.file-drop-area').find('.remove').addClass('active');
+            thisInput.closest('.file-drop-area').find('.fake-btn').addClass('hidden');
+
+            filesSizeKb = filesSize / 1024;
+            thisInput.closest('.file-drop-area').find('.file-size').addClass('active').text(filesSizeKb.toFixed() + ' Кб');;
+
+            if (filesCount === 1) {
+            // if single file is selected, show file name
+                var fileName = $(this).val().split('\\').pop();
+                $textContainer.addClass('active').text(fileName);
+            } else {
+                // otherwise show number of files
+                $textContainer.text('Выбрано файлов: ' + filesCount);
+            }
+        }
+      }
+    });
+    $('.remove').click(function () {
+        $(this).closest('.file-drop-area').removeClass('active');
+        $(this).removeClass('active');
+        $(this).closest('.file-drop-area').find('.file-size').removeClass('active').text('');
+        $(this).closest('.file-drop-area').find('.file-input').val('');
+        $(this).closest('.file-drop-area').find('.file-msg').removeClass('active').text('резюме');
+        $(this).closest('.file-drop-area').find('.fake-btn').removeClass('hidden');
+    });
 
 });

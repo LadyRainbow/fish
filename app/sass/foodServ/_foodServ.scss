@@ -34,15 +34,12 @@
     }
 }
 .breadcrumbs-fish {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0 -10px;
     li {
-        flex-shrink: 0;
+        display: inline;
         a {
             position: relative;
-            padding: 5px 10px 0;
+            padding-top: 5px;
+            padding-right: 5px;
             font-family: 'Gilroy', sans-serif;
             font-weight: 500;
             color: #95A6C2;
@@ -55,10 +52,11 @@
         }
         & + li {
             a {
+                padding-left: 12px;
                 &::before {
                     content: '•';
                     position: absolute;
-                    left: -2px;
+                    left: 0px;
                     top: 3px;
                 }
             }
