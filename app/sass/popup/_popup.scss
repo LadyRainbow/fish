@@ -26,7 +26,7 @@
 .pop-up-general-block {
     padding: 40px 48px 55px;
     position: relative;
-    max-height: 85vh;
+    max-height: calc(100vh - 56px);
     max-width: 90%;
     width: 664px;
     z-index: 7;

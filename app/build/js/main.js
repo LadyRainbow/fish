@@ -554,6 +554,13 @@ $(document).ready(function () {
         $popUpGeneralBlock.removeClass('active');
         $('#oneClickPopUp').addClass('active');
     });
+    // 7 pop-up for wannaWork
+    $('.open-wanna-work-one-click').click(function (e) {
+        $overlayPopUpWRP.addClass('active');
+        $('body, html').addClass('active');
+        $popUpGeneralBlock.removeClass('active');
+        $('#wannaWork').addClass('active');
+    });
 
     $overlay.click(function () {
         $overlayPopUpWRP.removeClass('active');

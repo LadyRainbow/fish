@@ -115,6 +115,68 @@
     </form>
     <div class="pop-up-general-block-close-btn"></div>
 </div>
+<div id="wannaWork" class="pop-up-general-block pop-up-general">
+    <h2>Заполнить анкету соискателя</h2>
+    <form id="resumeFormpopUp" action="#">
+        <div class="row row-input">
+            <div class="col-xl-8 col-lg-7 col-md-8 col-12">
+                <div class="input-style">
+                    <p class="input-title">Ваше имя</p>
+                    <input class="input-form input-valid" type="text" data-input="name" name="name">
+                    <p class="input-error">Ошибка ввода</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 col-md-4 col-12">
+                <div class="input-style">
+                    <p class="input-title">Дата рождения</p>
+                    <input class="input-form input-valid" type="text" name="age">
+                    <p class="input-error">Ошибка ввода</p>
+                </div>
+            </div>
+        </div>
+        <div class="row row-input">
+            <div class="col-md-6 col-12">
+                <div class="input-style">
+                    <p class="input-title">E-mail</p>
+                    <input class="input-form input-valid" type="email" data-input="email" name="mail">
+                    <p class="input-error">Ошибка ввода</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="input-style">
+                    <p class="input-title">Номер телефона</p>
+                    <input class="input-form input-valid mask-phone" type="tel" data-input="phone" name="phone" placeholder="+7 (">
+                    <p class="input-error">Ошибка ввода</p>
+                </div>
+            </div>
+        </div>
+        <div class="input-style">
+            <p class="input-title">Должность, на которую претендуете</p>
+            <input class="input-form input-valid" type="text" name="work">
+            <p class="input-error">Ошибка ввода</p>
+        </div>
+        <div class="file-drop-area">
+            <p class="drop-error hidden">Слишком большой файл</p>
+            <div class="drop-success">
+                <div class="remove"></div>
+                <span class="fake-btn">Прикрепить</span>
+                <div class="file-msg-wrp">
+                    <span class="file-msg">резюме</span>
+                    <p class="file-size">7 Кб</p>
+                </div>
+            </div>
+            <input class="file-input" type="file">
+        </div>
+        <div class="check-form-wrp">
+            <label class="checkbox">
+                <input class="checkbox-check" type="checkbox"/>
+                <div class="checkbox-text">Я подтверждаю своё согласие на обработку<a href="/policy"> персональных данных</a></div>
+            </label>
+        </div>
+        <input type="submit" class="form-btn btn-checkbox btn-checkbox-disabled" value="Отправить">
+    </form>
+    <div class="pop-up-general-block-close-btn"></div>
+</div>
 <div id="oneClickPopUp" class="pop-up-general-block pop-up-general">
     <h2>Заказ в 1 клик</h2>
     <form>

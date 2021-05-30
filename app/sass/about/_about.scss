@@ -419,7 +419,7 @@
         height: 200px;
     }
     .slider-gramota-wrp {
-        width: 100vw;
+        width: calc(100vw - 10px);
         margin: 0 -5px;
     }
 }

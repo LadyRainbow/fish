@@ -221,7 +221,102 @@
 .section-map {
     padding-top: 82px;
 }
+.map-russia-wrp {
+    position: relative;
+}
+.znak-map {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border: 1px solid #808B9F;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    &.small {
+        width: 60px;
+        height: 60px;
+        .znak-map-inner {
+            width: 40px;
+            height: 40px;
+            font-size: 16px;
+        }
+    }
+    &.middle {
+        width: 80px;
+        height: 80px;
+        .znak-map-inner {
+            width: 54px;
+            height: 54px;
+        }
+    }
+    &.coord1 {
+        top: 31%;
+        left: 22%;
+    }
+    &.coord2 {
+        top: 41%;
+        left: 9.5%;
+    }
+    &.coord3 {
+        top: 50%;
+        left: 25%;
+    }
+    &.coord4 {
+        top: 45%;
+        left: 41%;
+    }
+}
+.znak-map-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    box-shadow: -5px 5px 10px rgba(214, 214, 214, 0.2), 5px -5px 10px rgba(214, 214, 214, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(214, 214, 214, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(214, 214, 214, 0.5);
+    border-radius: 50%;
+    width: 74px;
+    height: 74px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    font-family: 'Gilroy', sans-serif;
+    color: #3F5883;
+}
+@media (max-width: 991px) {
+    .znak-map {
+        width: 60px;
+        height: 60px;
+        font-size: 14px;
+        .znak-map-inner {
+            width: 40px;
+            height: 40px;
+            font-size: 14px;
+        }
+        &.small {
+            width: 60px;
+            height: 60px;
+            .znak-map-inner {
+                width: 40px;
+                height: 40px;
+                font-size: 14px;
+            }
+        }
+        &.middle {
+            width: 60px;
+            height: 60px;
+            .znak-map-inner {
+                width: 40px;
+                height: 40px;
+                font-size: 14px;
+            }
+        }
+    }
+}
 @media (max-width: 767px) {
+    .section-map {
+        padding-top: 42px;
+    }
     .row-input {
         .col-12 {
             & + .col-12 {
@@ -231,5 +326,57 @@
     }
     .slide-lady {
         padding: 16px 16px 20px;
+    }
+    .znak-map {
+        width: 30px;
+        height: 30px;
+        .znak-map-inner {
+            box-shadow: none;
+            width: auto;
+            height: auto;
+            font-size: 12px;
+        }
+        &.small {
+            width: 30px;
+            height: 30px;
+            .znak-map-inner {
+                width: auto;
+                height: auto;
+                font-size: 12px;
+            }
+        }
+        &.middle {
+            width: 30px;
+            height: 30px;
+            .znak-map-inner {
+                width: auto;
+                height: auto;
+                font-size: 12px;
+            }
+        }
+    }
+    .resume-section {
+        padding-top: 40px;
+        h2 {
+            margin-top: 40px;
+        }
+        .container > .row {
+            flex-direction: column-reverse;
+        }
+        form {
+            margin-top: 20px;
+        }
+    }
+    .resume-plashka-wrp {
+        padding-left: 0;
+    }
+    .resume-plashka {
+        img {
+           height: 250px;
+           object-position: top;
+        }
+    }
+    .team-page {
+        padding-bottom: 80px;
     }
 }
