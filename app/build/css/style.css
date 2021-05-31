@@ -5340,6 +5340,36 @@ table {
     .deliveryIM-page .row {
       margin-bottom: 40px; } }
 
+.checkoutIM-page {
+  padding-top: 176px;
+  padding-bottom: 112px; }
+
+.h1-click {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 48px; }
+
+.click-checkout-btn {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #F70F00;
+  cursor: pointer; }
+
 .cart-page {
   padding-top: 176px;
   padding-bottom: 112px; }
