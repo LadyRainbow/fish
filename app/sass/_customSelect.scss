@@ -4,7 +4,7 @@
     flex-direction: column;
     line-height: 1;
     position: relative;
-    z-index: 1;
+    // z-index: 1;
 }
 
 .custom-select-wrapper label,
@@ -53,6 +53,7 @@
     overflow: auto;
     transition: all 0.2s linear;
     min-width: 190px;
+    z-index: 2;
 }
 
 .custom-select-list {
@@ -62,6 +63,7 @@
     transform: translateY(-100%);
     background: #FFFFFF;
     transition: all 0.2s linear;
+    z-index: 2;
 }
 .header-select-catalog {
     margin-left: 8px;
@@ -77,22 +79,15 @@
         transform: rotate(180deg);
     }
 }
-
-
-
-
 .custom-select-list li {
     padding: 8px;
     & + li {
         margin-left: 0;
     }
 }
-
-
 .custom-select-list li.selected {
     background: rgba(208, 232, 255, 0.5);
 }
-
 .custom-select-list li:hover {
     background: rgba(208, 232, 255, 0.5);
 }

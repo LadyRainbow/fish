@@ -1,0 +1,17 @@
+.documents-page {
+    padding-bottom: 82px;
+}
+.work-doki {
+    span {
+        display: block;
+        padding-top: 2px;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #95A6C2;
+    }
+}
+@media (max-width: 767px) {
+    .documents-page {
+        padding-bottom: 52px;
+    }
+}

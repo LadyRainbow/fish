@@ -1,3 +1,350 @@
 .work-page {
-
+    padding-bottom: 112px;
+}
+.work-delivery-section {
+    padding-top: 82px;
+}
+.form-select {
+    height: 48px;
+    background: #F4F5F8;
+    border: 1px solid #C5D3EA;
+    border-radius: 8px;
+    .custom-select-wrapper, .custom-select-head {
+        height: 100%;
+    }
+    .custom-select-head {
+        padding: 0 40px 0 18px;
+        &::after {
+            right: 14px;
+            width: 20px;
+            height: 20px;
+            filter: brightness(0) saturate(100%) invert(82%) sepia(6%) saturate(1535%) hue-rotate(182deg) brightness(82%) contrast(81%);
+        }
+    }
+    .custom-select-list-wrapper {
+        top: 48px;
+        left: 0;
+    }
+    .custom-select-list li {
+        padding: 10px 18px;
+    }
+}
+.form-work-input {
+    & + .form-work-input {
+        margin-top: 32px;
+    }
+}
+.form-work-title {
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 1.2;
+    color: #4B4B4B;
+    font-family: 'Gilroy', sans-serif;
+    margin-bottom: 16px;
+}
+.plashka-work-delivery {
+    padding: 40px 40px 48px;
+    background: #F4F5F8;
+    box-shadow: -17px 17px 34px rgba(224, 225, 228, 0.2), 17px -17px 34px rgba(224, 225, 228, 0.2), -17px -17px 34px rgba(255, 255, 255, 0.9), 17px 17px 43px rgba(224, 225, 228, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(224, 225, 228, 0.5);
+    border-radius: 16px;
+}
+.work-count-wrp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    p {
+        font-family: 'Gilroy', sans-serif;
+        line-height: 1.2;
+        &:first-child {
+            font-size: 19px;
+            font-weight: 500;
+            color: #4B4B4B;
+        }
+        &:last-child {
+            font-weight: 600;
+            font-size: 44px;
+            text-align: right;
+            letter-spacing: -0.02em;
+            color: #3F5883;
+        }
+    }
+}
+.plashka-priform-wrp {
+    padding-left: 30px;
+}
+.plashka-priform {
+    position: relative;
+    background: rgba(41, 42, 47, 1);
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 40px 40px 56px;
+    & > img {
+        position: absolute;
+        opacity: 0.1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.plashka-priform-content {
+    position: relative;
+    z-index: 2;
+}
+.priform-block {
+    & + .priform-block {
+        margin-top: 32px;
+    }
+}
+.priform-title {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 16px;
+    span {
+        color: #F60F00;
+    }
+}
+.priform-text {
+    color: #ffffff;
+    p + p {
+        margin-top: 8px;
+    }
+}
+.work-doki {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    a {
+        text-decoration-line: underline;
+        &:hover {
+            color: #F60F00;
+        }
+    }
+}
+.work-doki-img {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 24px;
+    width: 46px;
+    height: 46px;
+    background: #F4F5F8;
+    box-shadow: -4px 4px 8px rgba(224, 225, 228, 0.2), 4px -4px 8px rgba(224, 225, 228, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.9), 4px 4px 10px rgba(224, 225, 228, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(224, 225, 228, 0.5);
+    border-radius: 8px;
+    img {
+        width: 24px;
+    }
+}
+.step-work-section {
+    padding-top: 82px;
+    .col-12 {
+        margin-bottom: 30px;
+    }
+}
+.step-work-block {
+    background: #F4F5F8;
+    box-shadow: -17px 17px 34px rgba(224, 225, 228, 0.2), 17px -17px 34px rgba(224, 225, 228, 0.2), -17px -17px 34px rgba(255, 255, 255, 0.9), 17px 17px 43px rgba(224, 225, 228, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(224, 225, 228, 0.5);
+    border-radius: 16px;
+    padding: 10px;
+    height: 100%;
+}
+.step-work-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: #F4F5F8;
+    border: 1px solid #95A6C2;
+    border-radius: 12px;
+    padding: 32px 24px 40px;
+    height: 100%;
+    ul {
+        li {
+            padding-left: 17px;
+            position: relative;
+            &::before {
+                content: '•';
+                position: absolute;
+                left: 5px;
+                top: 1px;
+            }
+        }
+    }
+}
+.step-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    color: #4B4B4B;
+    font-family: 'Gilroy', sans-serif;
+    margin-bottom: 16px;
+}
+.step-work-btn {
+    margin-top: 32px;
+}
+.step-work-red-btn {
+    @extend %btn;
+    height: 40px;
+    padding: 0 23px;
+    font-size: 12px;
+}
+.country-sale {
+    padding-top: 112px;
+    .container > .row {
+        & > .col-12 {
+            margin-bottom: 30px;
+        }
+        .row {
+            p {
+               padding-left: 17px;
+               position: relative;
+               margin-bottom: 10px;
+               &::before {
+                   content: '•';
+                   position: absolute;
+                   left: 5px;
+                   top: 1px;
+               }
+            }
+       }
+    }
+}
+.country-img {
+    padding: 8px;
+    width: 80px;
+    height: 80px;
+    background: #F4F5F8;
+    box-shadow: -17px 17px 34px rgba(224, 225, 228, 0.2), 17px -17px 34px rgba(224, 225, 228, 0.2), -17px -17px 34px rgba(255, 255, 255, 0.9), 17px 17px 43px rgba(224, 225, 228, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(224, 225, 228, 0.5);
+    border-radius: 16px;
+}
+.country-img-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: #F4F5F8;
+    border: 1px solid #95A6C2;
+    border-radius: 12px;
+    img {
+        width: 40px;
+    }
+}
+.country-title {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #4B4B4B;
+    font-family: 'Gilroy', sans-serif;
+}
+// stock
+.stock-del-section {
+    padding-top: 82px;
+    .col-12 {
+        margin-bottom: 30px;
+    }
+}
+.stock-block {
+    padding: 24px 24px 40px;
+    background: #F4F5F8;
+    box-shadow: -13px 13px 26px rgba(234, 235, 238, 0.2), 13px -13px 26px rgba(234, 235, 238, 0.2), -13px -13px 26px rgba(254, 255, 255, 0.9), 13px 13px 33px rgba(234, 235, 238, 0.9), inset 1px 1px 2px rgba(254, 255, 255, 0.3), inset -1px -1px 2px rgba(234, 235, 238, 0.5);
+    border-radius: 16px;
+    height: 100%;
+    img {
+        border-radius: 14px;
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 24px;
+    }
+}
+.stock-title {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #3F5883;
+    margin-bottom: 16px;
+    span {
+        color: #91A9CD;
+    }
+}
+.work-doki-section {
+    padding-top: 82px;
+}
+@media (max-width: 1199px)  {
+    .plashka-priform-wrp {
+        padding-left: 0px;
+    }
+}
+@media (max-width: 991px)  {
+    .plashka-priform-wrp {
+        margin-top: 40px;
+    }
+}
+@media (max-width: 767px)  {
+    .country-sale {
+        padding-top: 80px;
+    }
+    .country-title {
+        font-size: 24px;
+        margin: 0 0 0 16px;
+    }
+    .country-img-title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+    .country-img {
+        width: 70px;
+        height: 70px;
+    }
+    .stock-del-section {
+        padding-top: 40px;
+    }
+    .stock-title {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+    .work-doki-section {
+        padding-top: 52px;
+    }
+    .step-work-section {
+        padding-top: 52px;
+    }
+    .step-title {
+        font-size: 22px;
+    }
+    .work-delivery-section {
+        padding-top: 52px;
+    }
+    .plashka-work-delivery {
+        padding: 32px 24px 40px;
+    }
+    .work-count-wrp {
+        margin-top: 32px;
+    }
+    .work-count-wrp p:last-child {
+        font-size: 40px;
+    }
+    .plashka-priform {
+        padding: 36px 24px 40px;
+    }
+    .priform-title {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+    .priform-block + .priform-block {
+        margin-top: 20px;
+    }
+    .work-page {
+        padding-bottom: 82px;
+    }
 }
