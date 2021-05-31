@@ -1,0 +1,140 @@
+.contacts-page {
+    padding-top: 160px;
+    padding-bottom: 112px;
+    h1 {
+        margin-top: 64px;
+        margin-bottom: 24px;
+        & + .row {
+            margin-bottom: 48px;
+        }
+    }
+    h2 {
+        margin-bottom: 18px;
+    }
+    .form-select {
+        margin-bottom: 40px;
+    }
+}
+.contacts-info-map {
+    padding-right: 45px;
+}
+.map-contacts-wrp {
+    box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(224, 225, 228, 0.5);
+    filter: drop-shadow(-17px 17px 34px rgba(224, 225, 228, 0.2)), drop-shadow(17px -17px 34px rgba(224, 225, 228, 0.2)), drop-shadow(-17px -17px 34px rgba(255, 255, 255, 0.9)), drop-shadow(17px 17px 43px rgba(224, 225, 228, 0.9));
+    border-radius: 16px;
+    height: 387px;
+}
+.map-contacts {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+.manager-section {
+    padding-top: 80px;
+}
+.plashka-manager {
+    position: relative;
+    margin-top: 48px;
+    padding: 24px;
+    background: #F4F5F8;
+    box-shadow: -17px 17px 34px rgba(224, 225, 228, 0.2), 17px -17px 34px rgba(224, 225, 228, 0.2), -17px -17px 34px rgba(255, 255, 255, 0.9), 17px 17px 43px rgba(224, 225, 228, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(224, 225, 228, 0.5);
+    border-radius: 16px;
+    display: flex;
+    align-items: flex-start;
+    img {
+        display: none;
+        width: 37.8%;
+        border-radius: 12px;
+        height: 384px;
+        margin-right: 73px;
+        object-fit: cover;
+        &.active {
+            display: block;
+        }
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 24px;
+        right: 24px;
+        width: 124px;
+        height: 124px;
+        background: url('../img/clerk.png') center no-repeat;
+        background-position: center;
+    }
+}
+.plashka-manager-content-wrp {
+    width: 33%;
+}
+.plashka-city-content, .plashka-manager-content {
+    display: none;
+    &.active {
+        display: block;
+    }
+}
+.contacts-content {
+    & + .contacts-content {
+        margin-top: 32px;
+    }
+}
+.contacts-prop {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #95A6C2;
+    margin-bottom: 8px;
+}
+.contacts-val {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 1.2;
+    color: #4B4B4B;
+}
+@media (max-width: 991px)  {
+    .contacts-info-map {
+        padding-right: 0;
+    }
+    .plashka-manager img {
+        width: 48%;
+        margin-right: 53px;
+        height: 284px;
+    }
+}
+@media (max-width: 767px)  {
+    .plashka-manager img {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 40px;
+    }
+    .plashka-manager-content-wrp {
+        width: 100%;
+    }
+    .plashka-manager {
+        margin-top: 26px;
+        flex-direction: column-reverse;
+    }
+    .contacts-page {
+        padding-top: 40px;
+        padding-bottom: 82px;
+        h1 {
+            margin-top: 48px;
+            margin-bottom: 16px;
+            & + .row {
+                margin-bottom: 32px;
+            }
+        }
+    }
+    .map-contacts-wrp {
+        margin-top: 40px;
+    }
+    .manager-section {
+        padding-top: 60px;
+    }
+    .plashka-manager::after {
+        display: none;
+    }
+}

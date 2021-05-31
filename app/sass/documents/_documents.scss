@@ -10,8 +10,112 @@
         color: #95A6C2;
     }
 }
+// partners
+.partners-page {
+    padding-bottom: 112px;
+}
+.partners-section {
+    padding-top: 112px;
+    h2 {
+        margin-bottom: 40px;
+    }
+}
+.partners-reg-plashki-wrp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.partners-reg-plashki {
+    display: flex;
+    align-items: center;
+    width: 288px;
+    padding: 0 30px;
+    height: 120px;
+    background: #F4F5F8;
+    box-shadow: -17px 17px 34px rgba(224, 225, 228, 0.2), 17px -17px 34px rgba(224, 225, 228, 0.2), -17px -17px 34px rgba(255, 255, 255, 0.9), 17px 17px 43px rgba(224, 225, 228, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(224, 225, 228, 0.5);
+    border-radius: 16px;
+    p {
+        font-family: 'Gilroy', sans-serif;
+        line-height: 1.2;
+        &:first-child {
+            font-weight: bold;
+            font-size: 42px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #F70F00;
+            margin-right: 12px;
+        }
+        &:last-child  {
+            font-weight: 500;
+            font-size: 19px;
+            color: #4B4B4B;
+        }
+    }
+    & + .partners-reg-plashki {
+        margin-top: 24px;
+    }
+}
+.partners-content {
+    p + p {
+        margin-top: 16px;
+    }
+}
+.part-post-btn {
+    @extend %btn;
+    width: fit-content;
+    margin-top: 32px;
+}
+// @media
+@media (max-width: 1199px) {
+    .partners-reg-plashki {
+        width: 100%;
+    }
+}
+@media (max-width: 1199px) {
+    .partners-reg-plashki {
+        display: block;
+        height: auto;
+        padding: 24px 24px 32px;
+    }
+}
 @media (max-width: 767px) {
+    .partners-row {
+        flex-direction: column-reverse;
+    }
+    .partners-reg-plashki-wrp {
+        flex-direction: row;
+        margin: 0 -10px 40px;
+    }
     .documents-page {
         padding-bottom: 52px;
+    }
+    .partners-page {
+        padding-bottom: 82px;
+    }
+    .partners-section {
+        padding-top: 80px;
+        h2 {
+            margin-bottom: 30px;
+        }
+    }
+    .partners-reg-plashki {
+        min-height: 120px;
+        margin: 0 10px;
+        width: calc(50% - 20px);
+        padding: 20px 16px 24px;
+        & + .partners-reg-plashki {
+            margin-top: 0;
+        }
+    }
+    .partners-reg-plashki p:first-child {
+        font-size: 32px;
+    }
+    .partners-reg-plashki p:last-child {
+        font-size: 16px;
+    }
+}
+@media (max-width: 400px)  {
+    .partners-reg-plashki p:last-child {
+        font-size: 14px;
     }
 }

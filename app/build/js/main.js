@@ -505,6 +505,43 @@ $(document).ready(function () {
               ]
         });
 
+
+        // select
+        $('#cityList .custom-select-list li').each(function (index, element) {
+            $(element).attr('data-man', index);
+        });
+        $('#managerList .custom-select-list li').each(function (index, element) {
+            $(element).attr('data-man', index);
+        });
+
+        $('.plashka-manager img').each(function (index, element) {
+            $(element).attr('data-man', index);
+        });
+        $('.plashka-manager-content').each(function (index, element) {
+            $(element).attr('data-man', index);
+        });
+        $('.plashka-city-content').each(function (index, element) {
+            $(element).attr('data-man', index);
+        });
+
+        $('#cityList .custom-select-list li').on('click', function () {
+            var value = $(this).attr('data-man');
+        });
+
+        $('#cityList .custom-select-list li').on('click', function () {
+            var value = $(this).attr('data-man');
+            console.log(value);
+            $('.plashka-city-content').removeClass('active');
+            $('.plashka-city-content[data-man=' + value + ']').addClass('active');
+        });
+        $('#managerList .custom-select-list li').on('click', function () {
+            var value = $(this).attr('data-man');
+            $('.plashka-manager img').removeClass('active');
+            $('.plashka-manager-content').removeClass('active');
+            $('.plashka-manager img[data-man=' + value + ']').addClass('active');
+            $('.plashka-manager-content[data-man=' + value + ']').addClass('active');
+        });
+
     // pop-ups
     function thnx () {
         $overlayPopUpWRP.addClass('active');

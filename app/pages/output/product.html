@@ -934,5 +934,23 @@
               };
         };
     </script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4R9PQyMDROizmuglGKqxCnsFl62st7pM"></script>
+
+    <script>
+        // Initialize Google map page Contact
+        function initMap() {
+          const myLatLng = { lat: 59.872917, lng: 30.986267 };
+          const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 17,
+            center: myLatLng,
+          });
+          new google.maps.Marker({
+            position: myLatLng,
+            map,
+          });
+        };
+        initMap();
+    </script>
 </body>
 </html>
