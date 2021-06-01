@@ -1,0 +1,160 @@
+.discountsIM-page {
+    padding-top: 176px;
+    padding-bottom: 88px;
+    h1 {
+        margin-bottom: 48px;
+    }
+}
+.discount-block {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+    background: #F4F5F8;
+    box-shadow: -13px 13px 26px rgba(234, 235, 238, 0.2), 13px -13px 26px rgba(234, 235, 238, 0.2), -13px -13px 26px rgba(254, 255, 255, 0.9), 13px 13px 33px rgba(234, 235, 238, 0.9), inset 1px 1px 2px rgba(254, 255, 255, 0.3), inset -1px -1px 2px rgba(234, 235, 238, 0.5);
+    border-radius: 16px;
+    margin-bottom: 24px;
+    & > div {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    img {
+        width: 40%;
+        height: 286px;
+        border-radius: 14px;
+        object-fit: cover;
+    }
+}
+.sale {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #F70F00;
+    text-transform: uppercase;
+}
+.discount-title {
+    margin-top: 54px;
+    margin-bottom: 15px;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #3F5883;
+    span {
+        color: #F70F00;
+    }
+    & + p {
+        width: 65%;
+    }
+}
+.data-discount {
+    margin-top: 8px;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #95A6C2;
+}
+// discountPage
+.discountPage {
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+.discount {
+    padding: 16px;
+    .meet-slide-img {
+        height: 207px;
+        margin-bottom: 16px;
+    }
+    .meet-title {
+        font-size: 14px;
+    }
+    .meet-tag {
+        font-size: 14px;
+    }
+}
+.meet-im-bottom > div p.disc-new {
+    & > span {
+        &:first-child {
+            color: #F70F00;
+            font-weight: bold;
+        }
+        span {
+            font-weight: normal;
+            text-decoration: line-through;
+        }
+    }
+}
+.disc-row {
+    margin-top: 48px;
+    .col-12 {
+        margin-bottom: 30px;
+    }
+}
+.disc-anons {
+    display: flex;
+    justify-content: flex-end;
+    .data-discount {
+        color: #fff;
+    }
+    .discount-title {
+        color: #fff;
+        span {
+            color: #F70F00;
+        }
+        & + p {
+            color: #fff;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .disc-anons {
+        display: block;
+        .data-discount {
+            margin-top: 40px;
+        }
+    }
+    .discount-block {
+        display: block;
+        img {
+            width: 100%;
+            margin-top: 32px;
+        }
+    }
+    .discount-title {
+        margin-top: 40px;
+        & + p {
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .discountPage {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+    .discountsIM-page {
+        padding-top: 100px;
+        padding-bottom: 50px;
+        h1 {
+            margin-bottom: 30px;
+        }
+    }
+    .discount-block {
+        padding: 24px 24px 32px;
+        img {
+            height: 150px;
+            margin-top: 24px;
+        }
+    }
+    .sale, .data-discount {
+        font-size: 19px;
+    }
+    .discount-title {
+        margin-top: 32px;
+        font-size: 24px;
+    }
+}

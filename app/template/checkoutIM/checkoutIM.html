@@ -8,7 +8,7 @@
             <div class="col-lg-6 col-12">
                 <form action="">
                     <div class="input-style">
-                        <p class="input-title">Ваше имя</p>
+                        <p class="input-title">ФИО</p>
                         <input class="input-form input-valid" type="text" data-input="name" name="name">
                         <p class="input-error">Ошибка ввода</p>
                     </div>
@@ -29,7 +29,7 @@
                         </div>
                     </div>
                     <div class="form-select-wrp form-work-input">
-                        <p class="input-title">1. Выберите склад отправки</p>
+                        <p class="input-title">Город доставки</p>
                         <div class="form-select">
                             <div class="custom-select-wrapper">
                                 <label for="stock"></label>
@@ -52,57 +52,83 @@
                         </div>
                     </div>
                     <div class="form-select-wrp form-work-input">
-                        <p class="input-title">1. Выберите склад отправки</p>
+                        <p class="input-title">Способ доставки</p>
                         <div class="form-select">
                             <div class="custom-select-wrapper">
                                 <label for="stock1"></label>
                                 <select id="stock1">
-                                    <option value="Москва" selected>Москва</option>
-                                    <option value="Питер">Питер</option>
-                                    <option value="Чугуев">Чугуев</option>
-                                    <option value="Лондон">Лондон</option>
+                                    <option value="Курьерская доставка - 400 ₽" selected>Курьерская доставка - 400 ₽</option>
+                                    <option value="Самовывоз">Самовывоз</option>
                                 </select>
-                                <div class="custom-select-head"><span>Москва</span></div>
+                                <div class="custom-select-head"><span>Курьерская доставка - 400 ₽</span></div>
                                 <div class="custom-select-list-wrapper">
                                     <ul class="custom-select-list">
-                                        <li data-value="Москва" class="selected">Москва</li>
-                                        <li data-value="Питер">Питер</li>
-                                        <li data-value="Чугуев">Чугуев</li>
-                                        <li data-value="Лондон">Лондон</li>
+                                        <li data-value="Курьерская доставка - 400 ₽" class="selected">Курьерская доставка - 400 ₽</li>
+                                        <li data-value="Самовывоз">Самовывоз</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="input-style">
-                        <p class="input-title">Ваше имя</p>
-                        <input class="input-form input-valid" type="text" data-input="name" name="name">
+                        <p class="input-title">Адрес доставки</p>
+                        <input class="input-form input-valid" type="text" name="address">
                         <p class="input-error">Ошибка ввода</p>
                     </div>
                     <div class="form-select-wrp form-work-input">
-                        <p class="input-title">1. Выберите склад отправки</p>
+                        <p class="input-title">Способ оплаты</p>
                         <div class="form-select">
                             <div class="custom-select-wrapper">
                                 <label for="stock2"></label>
                                 <select id="stock2">
-                                    <option value="Москва" selected>Москва</option>
-                                    <option value="Питер">Питер</option>
-                                    <option value="Чугуев">Чугуев</option>
-                                    <option value="Лондон">Лондон</option>
+                                    <option value="Наличными при получении" selected>Наличными при получении</option>
+                                    <option value="На карту">На карту</option>
                                 </select>
-                                <div class="custom-select-head"><span>Москва</span></div>
+                                <div class="custom-select-head"><span>Наличными при получении</span></div>
                                 <div class="custom-select-list-wrapper">
                                     <ul class="custom-select-list">
-                                        <li data-value="Москва" class="selected">Москва</li>
-                                        <li data-value="Питер">Питер</li>
-                                        <li data-value="Чугуев">Чугуев</li>
-                                        <li data-value="Лондон">Лондон</li>
+                                        <li data-value="Наличными при получении" class="selected">Наличными при получении</li>
+                                        <li data-value="На карту">На карту</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="input-style">
+                        <p class="input-title">Комментарий к заказу</p>
+                        <textarea class="input-form" name="comment"></textarea>
+                    </div>
                 </form>
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="plashka-checkout">
+                    <p class="checkout-title">Ваш заказ</p>
+                    <ul class="checkout-body">
+                        <li>
+                            <p class="property">
+                                <span>2 товара на сумму:</span>
+                                <span class="dots"></span>
+                            </p>
+                            <p class="value">2 400 ₽</p>
+                        </li>
+                        <li>
+                            <p class="property">
+                                <span>Доставка</span>
+                                <span class="dots"></span>
+                            </p>
+                            <p class="value">Не выбрано</p>
+                        </li>
+                    </ul>
+                    <div class="checkout-count-wrp">
+                        <div>
+                            <p>К оплате:</p>
+                            <p>Оплата картой</p>
+                        </div>
+                        <p>1 200 ₽</p>
+                    </div>
+                    <div class="checkout-podtv-btn">Подтверждаю заказ</div>
+                    <p>Подтверждая заказ, я соглашаюсь с условиями <a href="/policy">пользовательского соглашения</a></p>
+                </div>
             </div>
         </div>
     </div>
