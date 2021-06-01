@@ -1,36 +1,54 @@
 .not-found {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
     text-align: center;
     display: flex;
     align-items: center;
     height: 100vh;
     height: calc(var(--vhMenu, 1vh) * 100);
-    h3 {
-        font-size: 24px;
-        line-height: 1.2;
-        margin-bottom: 24px;
+    p + p {
+        margin-top: 8px;
     }
     a {
-        color: #FFD90F;
+        color: #F70F00;
         text-decoration: underline;
         transition: .2s;
         &:hover {
-            color: #FFD90F;
+            color: #F70F00;
             text-decoration: none;
         }
     }
 }
+.ball {
+    position: absolute;
+    &.ball1 {
+        left: 50px;
+        bottom: 50px;
+    }
+    &.ball2 {
+        right: 50px;
+        bottom: 24px;
+    }
+}
 .cifra {
-    font-size: 180px;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 220px;
     line-height: 1;
-    color: #FFD90F;
-    text-shadow: 0px 0px 10px #FFD90F;
-    font-family: 'bebas-neue', cursive;
+    color: #F4F5F8;
+    text-shadow: -11px 11px 22px rgba(220, 221, 223, 0.2), 11px -11px 22px rgba(220, 221, 223, 0.2), -11px -11px 22px rgba(255, 255, 255, 0.9), 11px 11px 28px rgba(220, 221, 223, 0.9);
 }
 @media (max-width: 991px) {
 
 }
 
 @media (max-width: 767px) {
+    .ball {
+        &.ball1 {
+            left: 50px;
+            top: 50px;
+        }
+    }
     .not-found  {
         h3 {
             font-size: 28px;

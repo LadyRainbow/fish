@@ -232,19 +232,19 @@ $(document).ready(function () {
        source: availableTags
     });
     // slider-vehi
-    // $('.slider-vehi').slick({
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     fade: true,
-    //     dots: true,
-    //     prevArrow: $('.prev-vehi-arrow'),
-    //     nextArrow: $('.next-vehi-arrow'),
-    //     appendDots: '.dots-vehi-wrp',
-    //     customPaging : function(slider, i) {
-    //         var title = $(slider.$slides[i]).data('title');
-    //         return '<a class="pager__item"> '+title+' </a>';
-    //     },
-    // });
+    $('.slider-vehi').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        dots: true,
+        prevArrow: $('.prev-vehi-arrow'),
+        nextArrow: $('.next-vehi-arrow'),
+        appendDots: '.dots-vehi-wrp',
+        customPaging : function(slider, i) {
+            var title = $(slider.$slides[i]).data('title');
+            return '<a class="pager__item"> '+title+' </a>';
+        },
+    });
 
 
 
